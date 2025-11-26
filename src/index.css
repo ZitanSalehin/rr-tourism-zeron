@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body,
+html {
+  font-family: "DM Sans", sans-serif;
+}
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.swiper-slide-custom {
+  width: 80%;
+}
+
+.mySwiper {
+  overflow: visible;
+}
