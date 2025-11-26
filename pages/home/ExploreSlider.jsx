@@ -6,40 +6,47 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ArrowLeft, ArrowRight, MapPin } from "feather-icons-react";
+import {
+  homeSlider1,
+  homeSlider2,
+  homeSlider3,
+  homeSlider4,
+  homeSlider5,
+} from "../../src/assets/index";
 
 const places = [
   {
-    img: "https://images.pexels.com/photos/461755/pexels-photo-461755.jpeg",
+    img: homeSlider1,
     title: "Spain",
     rating: "3.9",
     places: 32,
   },
   {
-    img: "https://images.pexels.com/photos/461755/pexels-photo-461755.jpeg",
+    img: homeSlider2,
     title: "Venice",
     rating: "4.5",
     places: 15,
   },
   {
-    img: "https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg",
+    img: homeSlider3,
     title: "London",
     rating: "4.8",
     places: 18,
   },
   {
-    img: "https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg",
+    img: homeSlider4,
     title: "Chicago",
     rating: "4.7",
     places: 24,
   },
   {
-    img: "https://images.pexels.com/photos/461755/pexels-photo-461755.jpeg",
+    img: homeSlider5,
     title: "Mumbai",
     rating: "3.8",
     places: 17,
   },
   {
-    img: "https://images.pexels.com/photos/461755/pexels-photo-461755.jpeg",
+    img: homeSlider3,
     title: "Tokyo",
     rating: "4.5",
     places: 16,
@@ -97,20 +104,29 @@ export default function ExploreSlider() {
         }}
       >
         {places.map((p, i) => (
-          <SwiperSlide key={i} className="rounded-xl overflow-hidden">
-            <div className="relative h-[380px] rounded-xl shadow">
+          <SwiperSlide
+            key={i}
+            className="rounded-xl overflow-hidden group cursor-pointer"
+          >
+            <div className="relative h-[380px] rounded-xl overflow-hidden">
+              {/* Image */}
               <img
                 src={p.img}
                 alt={p.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 draggable="false"
               />
 
-              <div className="absolute top-3 left-3 bg-black/10 px-2 py-1 rounded-md text-sm font-medium shadow text-white">
+              {/* 🔥 Hover Overlay Shadow */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500"></div>
+
+              {/* Rating */}
+              <div className="absolute top-3 left-3 bg-black/10 px-2 py-1 rounded-md text-sm font-medium shadow text-white z-10">
                 ⭐ {p.rating}
               </div>
 
-              <div className="absolute bottom-5 left-5 text-white">
+              {/* Text */}
+              <div className="absolute bottom-5 left-5 text-white z-10">
                 <p className="playfair text-lg flex items-center gap-2 pb-2">
                   <MapPin size={16} /> {p.places}
                 </p>

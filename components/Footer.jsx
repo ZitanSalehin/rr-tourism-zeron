@@ -1,148 +1,127 @@
 import {
-  Clock,
+  ArrowRight,
+  AtSign,
   Facebook,
   Instagram,
-  Linkedin,
-  Mail,
   MapPin,
   Phone,
+  Send,
   Twitter,
-  Zap,
 } from "feather-icons-react";
-import { Link } from "react-router-dom";
+import logo from "../src/assets/logoForDark.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#386ab1] text-white px-6 py-10 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">ZERON GROUP</h2>
-          <p className="text-sm mt-2">
-            The Largest Group of Company in Bangladesh
-          </p>
-
-          {/* Social Icons */}
-          <div className="mt-5">
-            <p className="font-semibold text-sm mb-3">
-              Connect with Social Media
-            </p>
-            <div className="flex justify-center md:justify-start gap-4">
-              <a
-                href="#"
-                className="p-2 border rounded-full hover:bg-white hover:text-blue-700 transition"
-              >
-                <Facebook size={18} />
-              </a>
-              <a
-                href="#"
-                className="p-2 border rounded-full hover:bg-white hover:text-blue-700 transition"
-              >
-                <Twitter size={18} />
-              </a>
-              <a
-                href="#"
-                className="p-2 border rounded-full hover:bg-white hover:text-blue-700 transition"
-              >
-                <Instagram size={18} />
-              </a>
-              <a
-                href="#"
-                className="p-2 border rounded-full hover:bg-white hover:text-blue-700 transition"
-              >
-                <Linkedin size={18} />
-              </a>
-            </div>
+    <footer className="bg-[#251c1c] text-white">
+      {/* Newsletter Section - Full Width */}
+      <div className="w-full bg-[#1a1313] py-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-6">
+          <img src={logo} alt="Zeron Group Logo" className="h-auto" />
+          <div className="playfair text-lg font-semibold text-center md:text-left">
+            Sign up for the newsletter:
           </div>
-        </div>
-
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Contact Us</h3>
-          <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-2">
-              <Phone size={16} />
-              <span className="flex flex-col">
-                <span>+880 01907-098052</span>
-                <span>+880 01907-098057</span>
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <Mail size={16} />
-              <span>zeronstudyabroad@gmail.com</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <MapPin size={16} />
-              <span>
-                F Haque Tower 107, Level-4, Bir Uttam C.R Datta Raod,
-                Dhaka-1205., Dhaka, Bangladesh
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <Clock size={16} />
-              <span>
-                Sat to Thu - 9:00am to 6:00pm (Friday Closed) Between 9:00 AM to
-                5:00 PM, Except on Government Holidays
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="md:col-span-1 lg:col-span-2 grid grid-cols-2 gap-6">
-          <div>
-            <h3 className="font-semibold text-lg mb-3">Important Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="cursor-pointer">Book</li>
-              <li className="cursor-pointer">Survey</li>
-              <li className="cursor-pointer">Privacy Policy</li>
-              <li className="cursor-pointer">Terms and Condition</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg mb-3 opacity-0 md:opacity-100">
-              ‎
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/about-us" className="cursor-pointer">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="cursor-pointer">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/companies" className="cursor-pointer">
-                  Our Companies
-                </Link>
-              </li>
-              <li>
-                <Link to="/offices" className="cursor-pointer">
-                  Our offices
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-span-2 flex items-center gap-3 mt-5">
-            <Zap size={20} />
-            <p className="text-sm">Zeron Group Award 2021</p>
+          <div className="relative w-full md:w-1/3">
+            <input
+              type="email"
+              placeholder="Enter email address"
+              className="w-full bg-white py-3 px-4 pr-12 rounded-lg text-black focus:outline-none"
+            />
+            <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#F26D52] p-2.5 rounded-md hover:bg-blue-700 transition">
+              <Send size={18} className="text-white" />
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-blue-500 mt-10 pt-5 text-center text-xs">
-        Copyright © 2025 Zeron Group. All right reserved. <br />
-        Developed by{" "}
-        <span className="font-semibold text-amber-300">
-          <a
-            href="https://axiadigitech.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Axia Digitech
-          </a>
-        </span>
+      {/* Main Footer Content */}
+      <div className="max-w-7xl mx-auto py-12 px-6 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-white/20">
+        {/* About Us */}
+        <div>
+          <h3 className="text-xl font-semibold mb-3">About Us</h3>
+          <p className="text-sm opacity-80 leading-relaxed">
+            Quia voluptas sit asper aut odit aut fugit quia consequuntur magni
+            nesciunt.
+          </p>
+          <div className="flex gap-4 mt-4">
+            <a
+              href="#"
+              className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition"
+            >
+              <Facebook size={16} />
+            </a>
+            <a
+              href="#"
+              className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition"
+            >
+              <Twitter size={16} />
+            </a>
+            <a
+              href="#"
+              className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition"
+            >
+              <Instagram size={16} />
+            </a>
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <div>
+          <h3 className="text-xl font-semibold mb-3">Navigation</h3>
+          <ul className="space-y-2 text-sm opacity-90">
+            {["Home", "About Us", "Destinations", "Blog", "Contact"].map(
+              (item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
+                >
+                  <ArrowRight size={14} /> {item}
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+
+        {/* Explore */}
+        <div>
+          <h3 className="text-xl font-semibold mb-3">Explore</h3>
+          <ul className="space-y-2 text-sm opacity-90">
+            {[
+              "Services",
+              "What We Offer",
+              "Our Story",
+              "Latest Posts",
+              "Help Center",
+            ].map((item) => (
+              <li
+                key={item}
+                className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
+              >
+                <ArrowRight size={14} /> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact Us */}
+        <div>
+          <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
+          <ul className="space-y-3 text-sm opacity-90">
+            <li className="flex items-center gap-2">
+              <Phone size={16} /> +61 8376 6284
+            </li>
+            <li className="flex items-center gap-2">
+              <AtSign size={16} /> info@atreves.com
+            </li>
+            <li className="flex items-center gap-2">
+              <MapPin size={16} /> 121 King Street Melbourne, Australia
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="text-center text-sm opacity-70 py-6">
+        Copyright © 2025 Axia Digitech. All rights reserved.
       </div>
     </footer>
   );

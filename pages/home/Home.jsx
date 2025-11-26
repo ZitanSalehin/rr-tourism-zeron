@@ -1,67 +1,8 @@
-import axios from "axios";
 import { Clock, Feather, MapPin, Phone, Users } from "feather-icons-react";
-import Cookies from "js-cookie";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import ExploreSlider from "../components/ExploreSlider";
-import banner from "../src/assets/banner.jpeg";
-import { logout } from "../store/authSlice";
+import banner from "../../src/assets/banner.jpeg";
+import ExploreSlider from "./ExploreSlider";
 
 export default function Home() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const [formData, setFormData] = useState({
-    name: "",
-    contact: "",
-    destination: "",
-    date: "",
-    people: "",
-  });
-
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // Correct payload names for backend
-    const payload = {
-      name: formData.name,
-      contactNumber: formData.contact,
-      destination: formData.destination,
-      travelDate: formData.date,
-      numPeople: formData.people,
-    };
-
-    try {
-      await axios.post("http://localhost:5000/api/bookings", payload);
-      alert("Booking submitted successfully!");
-      setFormData({
-        name: "",
-        contact: "",
-        destination: "",
-        date: "",
-        people: "",
-      });
-    } catch (err) {
-      console.error("Submission error:", err.response?.data || err.message);
-      alert("Submission failed!");
-    }
-  };
-
-  const handleLogout = () => {
-    // 1️⃣ Clear Redux state
-    dispatch(logout());
-
-    // 2️⃣ Clear cookies
-    Cookies.remove("token");
-    Cookies.remove("role");
-
-    // 3️⃣ Redirect to home page
-    navigate("/");
-  };
   return (
     <>
       <div
@@ -95,10 +36,7 @@ export default function Home() {
               Tour Booking Form
             </h2>
 
-            <form
-              onSubmit={handleSubmit}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
+            <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Name */}
               <div className="flex flex-col gap-2">
                 <span className="flex items-center gap-2">
@@ -112,8 +50,8 @@ export default function Home() {
                   type="text"
                   name="name"
                   placeholder="Name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  value=""
+                  readOnly
                   className="w-full bg-white p-2 rounded"
                   required
                 />
@@ -132,8 +70,8 @@ export default function Home() {
                   type="text"
                   name="contact"
                   placeholder="Contact Number"
-                  value={formData.contact}
-                  onChange={handleChange}
+                  value=""
+                  readOnly
                   className="w-full bg-white p-2 rounded"
                   required
                 />
@@ -152,8 +90,8 @@ export default function Home() {
                   type="text"
                   name="destination"
                   placeholder="Enter Destination"
-                  value={formData.destination}
-                  onChange={handleChange}
+                  value=""
+                  readOnly
                   className="w-full bg-white p-2 rounded-lg"
                   required
                 />
@@ -171,8 +109,8 @@ export default function Home() {
                 <input
                   type="date"
                   name="date"
-                  value={formData.date}
-                  onChange={handleChange}
+                  value=""
+                  readOnly
                   className="w-full bg-white p-2 rounded-lg"
                   required
                 />
@@ -191,8 +129,8 @@ export default function Home() {
                   type="number"
                   name="people"
                   placeholder="Number of People"
-                  value={formData.people}
-                  onChange={handleChange}
+                  value=""
+                  readOnly
                   className="w-full bg-white p-2 rounded-lg"
                   required
                 />
@@ -229,18 +167,12 @@ export default function Home() {
           {/* Adjust w-[75%] to 70/80% as you like.
             -mr-16 makes the slider extend beyond the viewport on the right so the last slide peeks.
             Use responsive negative margins to control peek amount per breakpoint. */}
-          <div className="w-[75%] -mr-6 sm:-mr-10 md:-mr-14 lg:-mr-16 xl:-mr-20">
+          <div className="w-[80%] -mr-6 sm:-mr-10 md:-mr-14 lg:-mr-16 xl:-mr-20">
             <ExploreSlider />
           </div>
         </div>
       </div>
-
-      <button
-        onClick={handleLogout}
-        className="mt-6 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
-      >
-        Logout
-      </button>
+      {/* <TrustedPartners /> */}
     </>
   );
 }
