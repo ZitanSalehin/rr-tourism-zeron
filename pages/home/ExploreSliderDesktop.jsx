@@ -53,7 +53,7 @@ const places = [
   },
 ];
 
-export default function ExploreSlider() {
+export default function ExploreSliderDesktop() {
   const swiperRef = useRef(null);
 
   return (

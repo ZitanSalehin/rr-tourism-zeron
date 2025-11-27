@@ -6,44 +6,29 @@ import Dropdown from "./Dropdown";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   setMenuOpen(false);
-  // }, [location]);
 
   return (
-    <nav className="bg-white text-md font-normal">
-      <div className="w-full flex justify-center items-center px-6 py-4">
-        <ul className="hidden lg:flex items-center justify-center gap-10">
-          <img
-            src={logo}
-            alt="Zeron Group Logo"
-            className="h-12 sm:h-14 w-12 md:w-32 object-contain mr-4"
-          />
+    <nav className="bg-white text-md font-normal fixed top-0 left-0 w-full z-99999 shadow-md">
+      <div className="container mx-auto flex justify-between items-center px-4 lg:px-40 py-4">
+        {/* Logo (always visible) */}
+        <img src={logo} alt="Zeron Group Logo" className="w-36 lg:w-40" />
 
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex items-center gap-10">
           <li>
-            <Link
-              to="/"
-              className="hover:text-[#F26D52] transition cursor-pointer"
-            >
+            <Link to="/" className="hover:text-[#F26D52] transition">
               Home
             </Link>
           </li>
+
           <li>
-            <Link
-              to="/"
-              className="hover:text-[#F26D52] transition cursor-pointer"
-            >
+            <Link to="/about-us" className="hover:text-[#F26D52] transition">
               About Us
             </Link>
           </li>
 
           <li>
-            <Link
-              to="/companies"
-              className="hover:text-[#F26D52] transition cursor-pointer"
-            >
+            <Link to="/designation" className="hover:text-[#F26D52] transition">
               Destinations
             </Link>
           </li>
@@ -51,56 +36,55 @@ const Header = () => {
           <Dropdown
             title="Pages"
             items={[
-              { label: "Our Team", path: "/" },
-              { label: "Services", path: "/" },
-              { label: "FAQ", path: "/" },
-              { label: "Gallery", path: "/" },
-              { label: "Get A Quote", path: "/" },
-              { label: "Support", path: "/" },
-              { label: "Terms Of Services", path: "/" },
+              { label: "Our Team", path: "/our-team" },
+              { label: "Services", path: "/services" },
+              { label: "FAQ", path: "/faq" },
+              { label: "Gallery", path: "/gallery" },
+              { label: "Get A Quote", path: "/quote" },
+              { label: "Support", path: "/support" },
+              { label: "Terms Of Services", path: "/terms-service" },
             ]}
           />
 
           <Dropdown
             title="Reviews"
             items={[
-              { label: "Review 1", path: "/" },
-              { label: "Review 2", path: "/" },
-              { label: "Review 3", path: "/" },
+              { label: "Review 1", path: "/review-1" },
+              { label: "Review 2", path: "/review-2" },
+              { label: "Review 3", path: "/review-3" },
             ]}
           />
 
           <li>
-            <Link
-              to="/companies"
-              className="hover:text-[#F26D52] transition cursor-pointer"
-            >
+            <Link to="/blog" className="hover:text-[#F26D52] transition">
               Blog
             </Link>
           </li>
 
+          {/* Contact Button */}
           <li>
-            <button className="bg-[#F26D52] py-2.5 px-4.5 rounded-lg flex items-center justify-center gap-2 ml-4">
-              <Link to="/contact" className="text-white">
-                Contact Us
-              </Link>
-              <ArrowRight size={16} className="text-white " />
-            </button>
+            <Link
+              to="/contact"
+              className="bg-[#F26D52] py-2.5 px-4 rounded-lg flex items-center gap-2 text-white"
+            >
+              Contact Us
+              <ArrowRight size={16} className="text-white" />
+            </Link>
           </li>
         </ul>
 
         {/* Mobile Hamburger */}
         <button
-          className="lg:hidden text-white"
+          className="lg:hidden text-black"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="black"
             >
               <path
                 strokeLinecap="round"
@@ -112,10 +96,10 @@ const Header = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="black"
             >
               <path
                 strokeLinecap="round"
@@ -130,71 +114,53 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-600 px-4 pb-3 space-y-2">
+        <div className="lg:hidden bg-white shadow-md px-6 pb-4 pt-2 space-y-3">
           <Link
             to="/"
-            className="block hover:bg-blue-500 rounded px-2 py-1"
+            className="block hover:text-[#F26D52] transition"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
 
-          <div className="ml-2">
-            <Dropdown
-              title="About Us"
-              items={[
-                { label: "About Founder", path: "/about-founder" },
-                { label: "Chairman's Message", path: "/chairman-message" },
-                { label: "Corporate Directors", hash: "#board-of-directors" },
-                { label: "Mission & Vision", path: "/mission-and-vision" },
-                { label: "History", path: "/history" },
-                { label: "About Us", path: "/about-us" },
-              ]}
-            />
-          </div>
-
           <Link
-            to="/companies"
-            className="block hover:bg-blue-500 rounded px-2 py-1"
+            to="/about-us"
+            className="block hover:text-[#F26D52] transition"
             onClick={() => setMenuOpen(false)}
           >
-            Our Companies
+            About Us
           </Link>
-
           <Link
-            to="/offices"
-            className="block hover:bg-blue-500 rounded px-2 py-1"
+            to="/designation"
+            className="block hover:text-[#F26D52] transition"
             onClick={() => setMenuOpen(false)}
           >
-            Our Offices
+            Designation
           </Link>
+          <Dropdown
+            title="Pages"
+            items={[
+              { label: "Our Team", path: "/our-team" },
+              { label: "Services", path: "/services" },
+              { label: "FAQ", path: "/faq" },
+              { label: "Gallery", path: "/gallery" },
+              { label: "Get A Quote", path: "/quote" },
+              { label: "Support", path: "/support" },
+              { label: "Terms Of Services", path: "/terms-service" },
+            ]}
+          />
 
-          <Link
-            to="/products"
-            className="block hover:bg-blue-500 rounded px-2 py-1"
-            onClick={() => setMenuOpen(false)}
-          >
-            Products
-          </Link>
+          <Dropdown
+            title="Reviews"
+            items={[
+              { label: "Review 1", path: "/review-1" },
+              { label: "Review 2", path: "/review-2" },
+              { label: "Review 3", path: "/review-3" },
+            ]}
+          />
 
-          <div className="ml-2">
-            <Dropdown
-              title="Media"
-              items={[
-                { label: "News & Events", path: "/media/events" },
-                { label: "Image Gallery", path: "/media/gallery" },
-                { label: "Video", path: "/media/video" },
-                { label: "Newsletter", path: "/media/newsletter" },
-              ]}
-            />
-          </div>
-
-          <Link
-            to="/contact"
-            className="block hover:bg-blue-500 rounded px-2 py-1"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact Us
+          <Link to="/blog" className="hover:text-[#F26D52] transition">
+            Blog
           </Link>
         </div>
       )}

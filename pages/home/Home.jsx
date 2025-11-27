@@ -1,8 +1,11 @@
 import { Clock, Feather, MapPin, Phone, Users } from "feather-icons-react";
 import banner from "../../src/assets/banner.jpeg";
-import ExploreSlider from "./ExploreSlider";
+import useMediaQuery from "../../src/hooks/useMediaQuery";
+import ExploreSliderDesktop from "./ExploreSliderDesktop";
+import ExploreSliderMobile from "./ExploreSliderMobile";
 
 export default function Home() {
+  const isDesktop = useMediaQuery("(min-width: 1600px)");
   return (
     <>
       <div
@@ -162,15 +165,20 @@ export default function Home() {
         </svg>
       </div>
       <div className="w-full bg-white min-h-screen p-8">
-        {/* overall layout: empty left area + slider to the right */}
-        <div className="w-full flex justify-end overflow-hidden">
-          {/* Adjust w-[75%] to 70/80% as you like.
+        {isDesktop ? (
+          <div className="w-full flex justify-end overflow-hidden">
+            {/* Adjust w-[75%] to 70/80% as you like.
             -mr-16 makes the slider extend beyond the viewport on the right so the last slide peeks.
             Use responsive negative margins to control peek amount per breakpoint. */}
-          <div className="w-[80%] -mr-6 sm:-mr-10 md:-mr-14 lg:-mr-16 xl:-mr-20">
-            <ExploreSlider />
+            <div className="w-[80%] -mr-6 sm:-mr-10 md:-mr-14 lg:-mr-16 xl:-mr-20">
+              <ExploreSliderDesktop />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="w-full">
+            <ExploreSliderMobile />
+          </div>
+        )}
       </div>
       {/* <TrustedPartners /> */}
     </>

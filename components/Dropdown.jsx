@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Dropdown = ({ title, items }) => {
   const [open, setOpen] = useState(false);
@@ -10,7 +11,6 @@ const Dropdown = ({ title, items }) => {
   };
 
   const handleMouseLeave = () => {
-    // Small delay to prevent flickering
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
     }, 200);
@@ -33,9 +33,9 @@ const Dropdown = ({ title, items }) => {
         </span>
       </button>
 
+      {/* Dropdown Box */}
       <div
-        className={`
-          absolute left-0 top-6 w-44 bg-white shadow-xl rounded-xl
+        className={`absolute left-0 top-6 w-44 bg-white shadow-xl rounded-xl
           transition-all duration-500 ease-[cubic-bezier(0.22, 1, 0.36, 1)]
           ${
             open
@@ -45,18 +45,18 @@ const Dropdown = ({ title, items }) => {
         `}
         style={{ zIndex: 9999 }}
       >
-        {/* 🔥 Fix: Extra padding area to prevent flicker when moving mouse */}
+        {/* Anti-flicker padding */}
         <div className="absolute -top-3 left-0 w-full h-3" />
 
         {items.map((item, i) => (
-          <div
+          <Link
             key={i}
-            className={`px-4 py-2 transition-all hover:bg-[#F26D52] hover:text-white cursor-pointer ${
-              i === items.length - 1 ? "rounded-b-xl" : ""
-            }`}
+            to={item.path || "#"}
+            className={`block px-4 py-2 transition-all hover:bg-[#F26D52] hover:text-white 
+              cursor-pointer ${i === items.length - 1 ? "rounded-b-xl" : ""}`}
           >
             {item.label}
-          </div>
+          </Link>
         ))}
       </div>
     </div>
