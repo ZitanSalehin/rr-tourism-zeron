@@ -3,6 +3,7 @@ import banner from "../../src/assets/banner.jpeg";
 import useMediaQuery from "../../src/hooks/useMediaQuery";
 import ExploreSliderDesktop from "./ExploreSliderDesktop";
 import ExploreSliderMobile from "./ExploreSliderMobile";
+import TrustedPartners from "./TrustedPartners";
 
 export default function Home() {
   const isDesktop = useMediaQuery("(min-width: 1600px)");
@@ -180,7 +181,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      {/* <TrustedPartners /> */}
+      <TrustedPartners />
     </>
   );
 }
