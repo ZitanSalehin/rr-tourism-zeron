@@ -4,6 +4,7 @@ import ExploreSliderDesktop from "./ExploreSliderDesktop";
 import ExploreSliderMobile from "./ExploreSliderMobile";
 import HeroSection from "./HeroSection";
 import TrustedPartners from "./TrustedPartners";
+import WhatWeOffer from "./WhatWeOffer";
 
 export default function Home() {
   const isDesktop = useMediaQuery("(min-width: 1600px)");
@@ -27,6 +28,7 @@ export default function Home() {
         )}
       </div>
       <AboutUsHome />
+      <WhatWeOffer />
       <TrustedPartners />
     </>
   );

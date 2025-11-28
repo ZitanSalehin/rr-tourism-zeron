@@ -6,6 +6,12 @@ import homeSlider3 from "../assets/homeSlider3.jpg";
 import homeSlider4 from "../assets/homeSlider4.jpg";
 import homeSlider5 from "../assets/homeSlider5.jpg";
 import logoWithoutText from "../assets/logoWithoutText.png";
+import s1 from "../assets/s1.png";
+import s2 from "../assets/s2.png";
+import s3 from "../assets/s3.png";
+import s4 from "../assets/s4.png";
+import s5 from "../assets/s5.png";
+import s6 from "../assets/s6.png";
 import tp1 from "../assets/tp1.png";
 import tp2 from "../assets/tp2.png";
 import tp3 from "../assets/tp3.png";
@@ -24,6 +30,12 @@ export {
   homeSlider4,
   homeSlider5,
   logoWithoutText,
+  s1,
+  s2,
+  s3,
+  s4,
+  s5,
+  s6,
   tp1,
   tp2,
   tp3,

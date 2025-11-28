@@ -20,7 +20,7 @@ const AboutUsHome = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-gray-300/80"></div>
+      <div className="absolute inset-0 bg-white/60"></div>
       <div className="relative max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
         {/* Left Side Image */}
         <div className="relative w-full md:w-1/2">
