@@ -1,8 +1,11 @@
+import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
+import happyPeople from "../assets/happyPeople.jpg";
 import homeSlider1 from "../assets/homeSlider1.jpg";
 import homeSlider2 from "../assets/homeSlider2.jpg";
 import homeSlider3 from "../assets/homeSlider3.jpg";
 import homeSlider4 from "../assets/homeSlider4.jpg";
 import homeSlider5 from "../assets/homeSlider5.jpg";
+import logoWithoutText from "../assets/logoWithoutText.png";
 import tp1 from "../assets/tp1.png";
 import tp2 from "../assets/tp2.png";
 import tp3 from "../assets/tp3.png";
@@ -13,11 +16,14 @@ import tp7 from "../assets/tp7.png";
 import tp8 from "../assets/tp8.png";
 
 export {
+  bgInHomeAboutUs,
+  happyPeople,
   homeSlider1,
   homeSlider2,
   homeSlider3,
   homeSlider4,
   homeSlider5,
+  logoWithoutText,
   tp1,
   tp2,
   tp3,
