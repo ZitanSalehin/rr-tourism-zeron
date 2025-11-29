@@ -5,7 +5,11 @@ import homeSlider2 from "../assets/homeSlider2.jpg";
 import homeSlider3 from "../assets/homeSlider3.jpg";
 import homeSlider4 from "../assets/homeSlider4.jpg";
 import homeSlider5 from "../assets/homeSlider5.jpg";
+import joinUs from "../assets/joinUs.jpg";
 import logoWithoutText from "../assets/logoWithoutText.png";
+import popularDestionation1 from "../assets/popularDestionation1.jpg";
+import popularDestionation2 from "../assets/popularDestionation2.jpg";
+import popularDestionation3 from "../assets/popularDestionation3.jpg";
 import s1 from "../assets/s1.png";
 import s2 from "../assets/s2.png";
 import s3 from "../assets/s3.png";
@@ -29,7 +33,11 @@ export {
   homeSlider3,
   homeSlider4,
   homeSlider5,
+  joinUs,
   logoWithoutText,
+  popularDestionation1,
+  popularDestionation2,
+  popularDestionation3,
   s1,
   s2,
   s3,

@@ -36,7 +36,7 @@ export default function WhatWeOffer() {
   ];
 
   return (
-    <div className="py-16 px-6 md:px-12 lg:px-20 bg-gray-50">
+    <div className="py-20 px-6 md:px-12 lg:px-20 bg-gray-50">
       {/* Title Section */}
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
@@ -53,7 +53,7 @@ export default function WhatWeOffer() {
           {services.map((item, i) => (
             <div
               key={i}
-              className="px-6 py-10 bg-white rounded-2xl shadow-sm border-b-2 border-gray-50 hover:border-b-2 hover:border-[#F16C52] transition duration-500 flex flex-col items-center text-center group"
+              className="px-6 py-10 bg-white rounded-2xl border-b-2 border-gray-50 hover:border-b-2 hover:border-[#F16C52] transition duration-500 flex flex-col items-center text-center group"
             >
               <div className="mb-4 transform transition-transform duration-300 group-hover:-translate-y-1">
                 <img src={item.icon} alt="" className="w-12 h-12 mx-auto" />

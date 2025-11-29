@@ -65,7 +65,7 @@ const Header = () => {
           <li>
             <Link
               to="/contact"
-              className="bg-[#F26D52] py-2.5 px-4 rounded-lg flex items-center gap-2 text-white"
+              className="bg-[#F26D52] py-3 px-5 rounded-lg flex items-center gap-2 text-white"
             >
               Contact Us
               <ArrowRight size={16} className="text-white" />
