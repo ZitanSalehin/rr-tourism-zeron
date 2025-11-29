@@ -20,7 +20,7 @@ const AboutUsHome = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-white/60"></div>
+      <div className="absolute inset-0 bg-[#FCFAF5]/70"></div>
       <div className="relative max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
         {/* Left Side Image */}
         <div className="relative w-full md:w-1/2">
@@ -32,29 +32,31 @@ const AboutUsHome = () => {
           <img
             src={logoWithoutText}
             alt="Logo"
-            className="absolute bottom-2 right-14 w-16 h-16 md:w-28 md:h-32"
+            className="absolute lg:bottom-2 -bottom-2 right-14 w-16 h-16 md:w-28 md:h-32"
           />
         </div>
 
         {/* Right Side Text */}
         <div className="w-full md:w-1/2 text-gray-800">
-          <p className="text-lg text-[#F26D52]">About Us</p>
-          <h2 className="text-5xl playfair font-semibold">
+          <p className="text-lg text-[#F26D52] text-center lg:text-start">
+            About Us
+          </p>
+          <h2 className="text-3xl lg:text-5xl playfair font-semibold text-center lg:text-start">
             Unveil Prime <br />
             Destinations With Us
           </h2>
-          <p className="my-8 text-amber-950">
+          <p className="my-8 text-amber-950 text-center lg:text-start">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit.
           </p>
 
           {/* Stats Cards */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col lg:flex-row flex-wrap gap-4">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-md py-8 w-40 text-center border-b-2 border-[#F26D52]"
+                className="bg-white rounded-xl shadow-md py-8 lg:w-40 text-center border-b-2 border-[#F26D52]"
               >
                 <p className="text-4xl font-bold text-[#F26D52]">
                   {stat.value}

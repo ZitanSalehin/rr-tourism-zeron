@@ -61,9 +61,9 @@ export default function DestinationSlider() {
   const swiperRef = useRef(null);
 
   return (
-    <section className="py-16 container mx-auto max-w-7xl px-4">
+    <section className="py-10 lg:py-16 container mx-auto max-w-7xl px-5 lg:px-20">
       {/* Section Heading */}
-      <div className="text-center mb-10">
+      <div className="text-center mb-5 lg:mb-10">
         <h3 className="text-[#F16C52] text-lg font-semibold">Best Places</h3>
         <h2 className="text-4xl md:text-5xl font-bold playfair">
           Popular Destinations
@@ -98,7 +98,7 @@ export default function DestinationSlider() {
               </div>
 
               {/* DETAILS */}
-              <div className="mt-4">
+              <div className="mt-4 px-4">
                 <div className="flex items-center gap-4 text-gray-600 text-sm">
                   <span className="flex items-center gap-2">
                     <Calendar size={14} className="text-[#F16C52]" />
@@ -136,16 +136,16 @@ export default function DestinationSlider() {
       <div className="flex gap-4 justify-center mt-6">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="w-12 h-12 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+          className="w-12 lg:w-14 h-12 lg:h-14 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
         >
-          <ArrowLeft size={24} />
+          <ArrowLeft />
         </button>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="w-12 h-12 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+          className="w-12 lg:w-14 h-12 lg:h-14 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
         >
-          <ArrowRight size={24} />
+          <ArrowRight />
         </button>
       </div>
     </section>

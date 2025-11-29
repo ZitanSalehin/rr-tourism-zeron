@@ -5,6 +5,7 @@ import ExploreSliderDesktop from "./ExploreSliderDesktop";
 import ExploreSliderMobile from "./ExploreSliderMobile";
 import HeroSection from "./HeroSection";
 import JoinUs from "./JoinUs";
+import Testimonials from "./Testimonials";
 import TrustedPartners from "./TrustedPartners";
 import WhatWeOffer from "./WhatWeOffer";
 
@@ -37,6 +38,7 @@ export default function Home() {
       <WhatWeOffer />
       <JoinUs />
       <DestinationSlider />
+      <Testimonials />
       <TrustedPartners />
     </>
   );

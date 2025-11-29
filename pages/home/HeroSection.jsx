@@ -1,35 +1,65 @@
 import { Clock, Feather, MapPin, Phone, Users } from "feather-icons-react";
 import banner from "../../src/assets/banner.jpeg";
+import useMediaQuery from "../../src/hooks/useMediaQuery";
 
 const HeroSection = () => {
+  const isDesktop = useMediaQuery("(min-width: 500px)");
   return (
     <div
-      className="w-full h-screen bg-cover bg-center flex items-center justify-center relative"
+      className={`w-full ${
+        isDesktop ? "h-screen" : "h-[155vh]"
+      } bg-cover bg-center flex items-center justify-center relative`}
       style={{ backgroundImage: `url(${banner})` }}
     >
-      <div className="absolute inset-0 bg-amber-900/30"></div>
+      <div className="absolute inset-0 bg-amber-900/20"></div>
 
       <div className="relative z-999">
-        <div className="flex flex-col items-center text-center px-4 sm:px-6 md:px-8">
-          {/* Top Heading with Lines */}
-          <div className="flex items-center justify-center my-4">
-            <div className="h-0.5 bg-[#F26D52] w-10 sm:w-14"></div>
+        {isDesktop ? (
+          <>
+            {" "}
+            <div className="flex flex-col items-center text-center px-4 sm:px-6 md:px-8">
+              {/* Top Heading with Lines */}
+              <div className="flex items-center justify-center my-4">
+                <div className="h-0.5 bg-[#F26D52] w-10 sm:w-14"></div>
 
-            <span className="playfair text-white text-lg sm:text-xl md:text-2xl font-semibold mx-2 sm:mx-4">
-              Discover The World
-            </span>
+                <span className="playfair text-white text-lg sm:text-xl md:text-2xl font-semibold mx-2 sm:mx-4">
+                  Discover The World
+                </span>
 
-            <div className="h-0.5 bg-[#F26D52] w-10 sm:w-14"></div>
-          </div>
+                <div className="h-0.5 bg-[#F26D52] w-10 sm:w-14"></div>
+              </div>
 
-          {/* Main Heading */}
-          <p className="playfair text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-semibold leading-tight">
-            Enjoy Luxurious Adventures <br />
-            <span className="block">Trip With Us</span>
-          </p>
-        </div>
+              {/* Main Heading */}
+              <p className="playfair text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-semibold leading-tight">
+                Enjoy Luxurious Adventures <br />
+                <span className="block">Trip With Us</span>
+              </p>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="flex flex-col items-center h-full text-center px-4 sm:px-6 md:px-8">
+              {/* Top Heading with Lines */}
+              <div className="flex items-center justify-center mb-4">
+                <div className="h-0.5 bg-[#F26D52] w-10 sm:w-14"></div>
 
-        <div className="p-6 mx-auto mt-6 bg-[#F5F4F1] rounded-2xl w-full sm:w-[80vw] md:w-[60vw] lg:w-[50vw]">
+                <span className="playfair text-white text-xl font-semibold mx-2 sm:mx-4">
+                  Discover The World
+                </span>
+
+                <div className="h-0.5 bg-[#F26D52] w-10 sm:w-14"></div>
+              </div>
+
+              {/* Main Heading */}
+              <p className="playfair text-4xl text-white font-semibold leading-12">
+                Enjoy <br /> Luxurious <br /> Adventures <br />
+                <span className="block">Trip With Us</span>
+              </p>
+            </div>
+          </>
+        )}
+
+        <div className="p-6 mx-auto mt-6 bg-[#F5F4F1] rounded-2xl w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw]">
           <h2 className="text-xl font-semibold mb-6 text-center">
             Tour Booking Form
           </h2>

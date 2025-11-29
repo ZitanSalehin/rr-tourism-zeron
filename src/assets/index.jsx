@@ -1,3 +1,4 @@
+import sixtySix from "../assets/66.png";
 import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
 import happyPeople from "../assets/happyPeople.jpg";
 import homeSlider1 from "../assets/homeSlider1.jpg";
@@ -10,12 +11,18 @@ import logoWithoutText from "../assets/logoWithoutText.png";
 import popularDestionation1 from "../assets/popularDestionation1.jpg";
 import popularDestionation2 from "../assets/popularDestionation2.jpg";
 import popularDestionation3 from "../assets/popularDestionation3.jpg";
+import ppl1 from "../assets/ppl1.jpg";
+import ppl2 from "../assets/ppl2.jpg";
+import ppl3 from "../assets/ppl3.jpg";
+import ppl4 from "../assets/ppl4.jpg";
+import ppl5 from "../assets/ppl5.jpg";
 import s1 from "../assets/s1.png";
 import s2 from "../assets/s2.png";
 import s3 from "../assets/s3.png";
 import s4 from "../assets/s4.png";
 import s5 from "../assets/s5.png";
 import s6 from "../assets/s6.png";
+import testimonialBG from "../assets/testimonialBG.jpg";
 import tp1 from "../assets/tp1.png";
 import tp2 from "../assets/tp2.png";
 import tp3 from "../assets/tp3.png";
@@ -38,12 +45,19 @@ export {
   popularDestionation1,
   popularDestionation2,
   popularDestionation3,
+  ppl1,
+  ppl2,
+  ppl3,
+  ppl4,
+  ppl5,
   s1,
   s2,
   s3,
   s4,
   s5,
   s6,
+  sixtySix,
+  testimonialBG,
   tp1,
   tp2,
   tp3,

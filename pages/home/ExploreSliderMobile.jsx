@@ -56,12 +56,12 @@ const places = [
 const ExploreSliderMobile = () => {
   const swiperRef = useRef(null);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-10 px-5">
       {/* Title and Navigation Buttons */}
       <div className="flex items-center justify-center mb-6 relative">
         <div>
           <p className="text-lg text-[#F26D52] text-center">Where to Go</p>
-          <h2 className="text-5xl playfair font-semibold text-center">
+          <h2 className="text-2xl playfair font-bold text-center">
             Explore The World With Us
           </h2>
         </div>
@@ -88,7 +88,7 @@ const ExploreSliderMobile = () => {
             key={i}
             className="rounded-xl overflow-hidden group cursor-pointer"
           >
-            <div className="relative h-[380px] rounded-xl overflow-hidden">
+            <div className="relative h-[340px] rounded-xl overflow-hidden">
               {/* Image */}
               <img
                 src={p.img}

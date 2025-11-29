@@ -9,6 +9,7 @@ import {
   Twitter,
 } from "feather-icons-react";
 import logo from "../src/assets/logoForDark.png";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 const Footer = () => {
   return (
@@ -122,8 +123,19 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center text-sm opacity-70 py-6">
-        Copyright © 2025 Axia Digitech. All rights reserved.
+        Copyright © 2025 Zeron Group. All right reserved. <br />
+        Developed by{" "}
+        <span className="font-semibold text-amber-300">
+          <a
+            href="https://axiadigitech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Axia Digitech
+          </a>
+        </span>
       </div>
+      <ScrollToTopButton />
     </footer>
   );
 };
