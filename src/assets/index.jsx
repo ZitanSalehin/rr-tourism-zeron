@@ -15,6 +15,9 @@ import logoWithoutText from "../assets/logoWithoutText.png";
 import popularDestionation1 from "../assets/popularDestionation1.jpg";
 import popularDestionation2 from "../assets/popularDestionation2.jpg";
 import popularDestionation3 from "../assets/popularDestionation3.jpg";
+import popularDestionation4 from "../assets/popularDestionation4.jpg";
+import popularDestionation5 from "../assets/popularDestionation5.jpg";
+import popularDestionation6 from "../assets/popularDestionation6.jpg";
 import ppl1 from "../assets/ppl1.jpg";
 import ppl2 from "../assets/ppl2.jpg";
 import ppl3 from "../assets/ppl3.jpg";
@@ -53,6 +56,9 @@ export {
   popularDestionation1,
   popularDestionation2,
   popularDestionation3,
+  popularDestionation4,
+  popularDestionation5,
+  popularDestionation6,
   ppl1,
   ppl2,
   ppl3,

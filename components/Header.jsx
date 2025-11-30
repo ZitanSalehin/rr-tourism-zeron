@@ -28,7 +28,7 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to="/designation" className="hover:text-[#F26D52] transition">
+            <Link to="/destination" className="hover:text-[#F26D52] transition">
               Destinations
             </Link>
           </li>
@@ -131,7 +131,7 @@ const Header = () => {
             About Us
           </Link>
           <Link
-            to="/designation"
+            to="/destination"
             className="block hover:text-[#F26D52] transition"
             onClick={() => setMenuOpen(false)}
           >
