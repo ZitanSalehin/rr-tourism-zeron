@@ -2,6 +2,7 @@ import useMediaQuery from "../../src/hooks/useMediaQuery";
 import ExploreSliderMobile from "../commonSection/ExploreSliderMobile";
 import JoinUs from "../commonSection/JoinUs";
 import TrustedPartners from "../commonSection/TrustedPartners";
+import WhatWeOffer from "../commonSection/WhatWeOffer";
 // import ExploreSliderMobile from "../commonSection/ExploreSliderMobile";
 
 // import JoinUs from "../commonSection/JoinUs";
@@ -11,8 +12,6 @@ import AboutUsHome from "./AboutUsHome";
 import DestinationSlider from "./DestinationSlider";
 import ExploreSliderDesktop from "./ExploreSliderDesktop";
 import HeroSection from "./HeroSection";
-
-import WhatWeOffer from "./WhatWeOffer";
 
 export default function Home() {
   const isDesktop = useMediaQuery("(min-width: 1600px)");

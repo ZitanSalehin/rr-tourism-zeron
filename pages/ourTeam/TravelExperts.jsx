@@ -56,7 +56,7 @@ const TravelExperts = () => {
             <img
               src={member.img}
               alt={member.name}
-              className="w-56 h-56 rounded-full object-cover"
+              className="w-60 h-60 rounded-full object-cover"
             />
 
             <h3 className="mt-4 text-md font-semibold playfair">

@@ -6,6 +6,7 @@ import AboutUs from "../pages/aboutUs/AboutUs";
 import Destination from "../pages/destination/Destination";
 import Home from "../pages/home/Home";
 import OurTeam from "../pages/ourTeam/OurTeam";
+import Services from "../pages/services/Services";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="about-us" element={<AboutUs />} />
           <Route path="destination" element={<Destination />} />
           <Route path="our-team" element={<OurTeam />} />
+          <Route path="services" element={<Services />} />
         </Route>
       </Routes>
     </BrowserRouter>
