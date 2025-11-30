@@ -1,12 +1,17 @@
 import useMediaQuery from "../../src/hooks/useMediaQuery";
+import ExploreSliderMobile from "../commonSection/ExploreSliderMobile";
+import JoinUs from "../commonSection/JoinUs";
+import TrustedPartners from "../commonSection/TrustedPartners";
+// import ExploreSliderMobile from "../commonSection/ExploreSliderMobile";
+
+// import JoinUs from "../commonSection/JoinUs";
+// import Testimonials from "../commonSection/Testimonials";
+// import TrustedPartners from "../commonSection/TrustedPartners";
 import AboutUsHome from "./AboutUsHome";
 import DestinationSlider from "./DestinationSlider";
 import ExploreSliderDesktop from "./ExploreSliderDesktop";
-import ExploreSliderMobile from "./ExploreSliderMobile";
 import HeroSection from "./HeroSection";
-import JoinUs from "./JoinUs";
-import Testimonials from "./Testimonials";
-import TrustedPartners from "./TrustedPartners";
+
 import WhatWeOffer from "./WhatWeOffer";
 
 export default function Home() {
@@ -38,7 +43,7 @@ export default function Home() {
       <WhatWeOffer />
       <JoinUs />
       <DestinationSlider />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <TrustedPartners />
     </>
   );

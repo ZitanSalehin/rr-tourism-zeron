@@ -46,7 +46,7 @@ const Header = () => {
             ]}
           />
 
-          <Dropdown
+          {/* <Dropdown
             title="Reviews"
             items={[
               { label: "Review 1", path: "/review-1" },
@@ -59,7 +59,7 @@ const Header = () => {
             <Link to="/blog" className="hover:text-[#F26D52] transition">
               Blog
             </Link>
-          </li>
+          </li> */}
 
           {/* Contact Button */}
           <li>
@@ -150,7 +150,7 @@ const Header = () => {
             ]}
           />
 
-          <Dropdown
+          {/* <Dropdown
             title="Reviews"
             items={[
               { label: "Review 1", path: "/review-1" },
@@ -161,7 +161,7 @@ const Header = () => {
 
           <Link to="/blog" className="hover:text-[#F26D52] transition">
             Blog
-          </Link>
+          </Link> */}
         </div>
       )}
     </nav>

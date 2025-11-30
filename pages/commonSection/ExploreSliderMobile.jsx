@@ -56,12 +56,12 @@ const places = [
 const ExploreSliderMobile = () => {
   const swiperRef = useRef(null);
   return (
-    <div className="flex flex-col mt-10 px-5">
+    <div className="flex flex-col py-5 lg:py-20 px-5">
       {/* Title and Navigation Buttons */}
       <div className="flex items-center justify-center mb-6 relative">
         <div>
           <p className="text-lg text-[#F26D52] text-center">Where to Go</p>
-          <h2 className="text-2xl playfair font-bold text-center">
+          <h2 className="text-2xl lg:text-5xl playfair font-bold text-center mb-0 lg:mb-4">
             Explore The World With Us
           </h2>
         </div>

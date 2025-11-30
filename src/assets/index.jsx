@@ -1,6 +1,10 @@
 import sixtySix from "../assets/66.png";
+import activitiesThrilled from "../assets/activitiesThrilled.jpg";
 import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
+import commonHeroBG from "../assets/commonHeroBG.jpg";
+import discover from "../assets/discoverDestination.jpg";
 import happyPeople from "../assets/happyPeople.jpg";
+import hill from "../assets/hill.png";
 import homeSlider1 from "../assets/homeSlider1.jpg";
 import homeSlider2 from "../assets/homeSlider2.jpg";
 import homeSlider3 from "../assets/homeSlider3.jpg";
@@ -33,8 +37,12 @@ import tp7 from "../assets/tp7.png";
 import tp8 from "../assets/tp8.png";
 
 export {
+  activitiesThrilled,
   bgInHomeAboutUs,
+  commonHeroBG,
+  discover,
   happyPeople,
+  hill,
   homeSlider1,
   homeSlider2,
   homeSlider3,
