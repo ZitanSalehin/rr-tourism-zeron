@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import Destination from "../pages/destination/Destination";
 import Home from "../pages/home/Home";
+import OurTeam from "../pages/ourTeam/OurTeam";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="destination" element={<Destination />} />
+          <Route path="our-team" element={<OurTeam />} />
         </Route>
       </Routes>
     </BrowserRouter>

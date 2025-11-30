@@ -21,7 +21,7 @@ const CommonHero = ({ title, desc, btnText }) => {
           {title ? title : ""}
         </h3>
 
-        <h2 className="text-white font-medium mt-6 leading-6">
+        <h2 className="text-white font-medium mt-6 leading-6 max-w-xl">
           {desc ? (
             desc
           ) : (
