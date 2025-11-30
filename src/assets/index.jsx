@@ -1,5 +1,6 @@
 import sixtySix from "../assets/66.png";
 import activitiesThrilled from "../assets/activitiesThrilled.jpg";
+import banner from "../assets/banner.jpeg";
 import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
 import commonHeroBG from "../assets/commonHeroBG.jpg";
 import discover from "../assets/discoverDestination.jpg";
@@ -47,6 +48,7 @@ import tp8 from "../assets/tp8.png";
 
 export {
   activitiesThrilled,
+  banner,
   bgInHomeAboutUs,
   commonHeroBG,
   discover,
