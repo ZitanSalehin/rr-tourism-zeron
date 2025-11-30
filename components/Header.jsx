@@ -53,13 +53,18 @@ const Header = () => {
               { label: "Review 2", path: "/review-2" },
               { label: "Review 3", path: "/review-3" },
             ]}
-          />
+          /> */}
+          <li>
+            <Link to="/reviews" className="hover:text-[#F26D52] transition">
+              Reviews
+            </Link>
+          </li>
 
           <li>
             <Link to="/blog" className="hover:text-[#F26D52] transition">
               Blog
             </Link>
-          </li> */}
+          </li>
 
           {/* Contact Button */}
           <li>
@@ -157,11 +162,16 @@ const Header = () => {
               { label: "Review 2", path: "/review-2" },
               { label: "Review 3", path: "/review-3" },
             ]}
-          />
+          /> */}
+          <span className="flex flex-col gap-2.5">
+            <Link to="/reviews" className="hover:text-[#F26D52] transition">
+              Reviews
+            </Link>
 
-          <Link to="/blog" className="hover:text-[#F26D52] transition">
-            Blog
-          </Link> */}
+            <Link to="/blog" className="hover:text-[#F26D52] transition">
+              Blog
+            </Link>
+          </span>
         </div>
       )}
     </nav>
