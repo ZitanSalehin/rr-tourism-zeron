@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import Destination from "../pages/destination/Destination";
 import FAQ from "../pages/faq/FAQ";
+import Gallery from "../pages/gallery/Gallery";
 import Home from "../pages/home/Home";
 import OurTeam from "../pages/ourTeam/OurTeam";
 import Services from "../pages/services/Services";
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="services" element={<Services />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="terms-service" element={<ConditionPolicy />} />
+          <Route path="gallery" element={<Gallery />} />
         </Route>
       </Routes>
     </BrowserRouter>
