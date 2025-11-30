@@ -36,6 +36,7 @@ import s3 from "../assets/s3.png";
 import s4 from "../assets/s4.png";
 import s5 from "../assets/s5.png";
 import s6 from "../assets/s6.png";
+import sixtySixOrange from "../assets/sixtySixOrange.png";
 import testimonialBG from "../assets/testimonialBG.jpg";
 import tp1 from "../assets/tp1.png";
 import tp2 from "../assets/tp2.png";
@@ -85,6 +86,7 @@ export {
   s5,
   s6,
   sixtySix,
+  sixtySixOrange,
   testimonialBG,
   tp1,
   tp2,

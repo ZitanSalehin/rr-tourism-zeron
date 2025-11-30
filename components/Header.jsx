@@ -61,7 +61,11 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to="/blog" className="hover:text-[#F26D52] transition">
+            <Link
+              to="#"
+              onClick={(e) => e.preventDefault()}
+              className="cursor-disabled pointer-events-none"
+            >
               Blog
             </Link>
           </li>

@@ -1,6 +1,7 @@
 import useMediaQuery from "../../src/hooks/useMediaQuery";
 import ExploreSliderMobile from "../commonSection/ExploreSliderMobile";
 import JoinUs from "../commonSection/JoinUs";
+import Testimonials from "../commonSection/Testimonials";
 import TrustedPartners from "../commonSection/TrustedPartners";
 import WhatWeOffer from "../commonSection/WhatWeOffer";
 // import ExploreSliderMobile from "../commonSection/ExploreSliderMobile";
@@ -42,7 +43,7 @@ export default function Home() {
       <WhatWeOffer />
       <JoinUs />
       <DestinationSlider />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <TrustedPartners />
     </>
   );
