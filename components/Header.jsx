@@ -40,8 +40,8 @@ const Header = () => {
               { label: "Services", path: "/services" },
               { label: "FAQ", path: "/faq" },
               { label: "Gallery", path: "/gallery" },
-              { label: "Get A Quote", path: "/quote" },
-              { label: "Support", path: "/support" },
+              // { label: "Get A Quote", path: "/quote" },
+              // { label: "Support", path: "/support" },
               { label: "Terms Of Services", path: "/terms-service" },
             ]}
           />
@@ -149,8 +149,8 @@ const Header = () => {
               { label: "Services", path: "/services" },
               { label: "FAQ", path: "/faq" },
               { label: "Gallery", path: "/gallery" },
-              { label: "Get A Quote", path: "/quote" },
-              { label: "Support", path: "/support" },
+              // { label: "Get A Quote", path: "/quote" },
+              // { label: "Support", path: "/support" },
               { label: "Terms Of Services", path: "/terms-service" },
             ]}
           />

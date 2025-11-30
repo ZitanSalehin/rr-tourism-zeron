@@ -8,6 +8,7 @@ import FAQ from "../pages/faq/FAQ";
 import Home from "../pages/home/Home";
 import OurTeam from "../pages/ourTeam/OurTeam";
 import Services from "../pages/services/Services";
+import ConditionPolicy from "../pages/termsCondition/ConditionPolicy";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="our-team" element={<OurTeam />} />
           <Route path="services" element={<Services />} />
           <Route path="faq" element={<FAQ />} />
+          <Route path="terms-service" element={<ConditionPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>

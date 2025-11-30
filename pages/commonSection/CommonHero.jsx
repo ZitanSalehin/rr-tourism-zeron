@@ -22,14 +22,7 @@ const CommonHero = ({ title, desc, btnText }) => {
         </h3>
 
         <h2 className="text-white font-medium mt-6 leading-6 max-w-xl">
-          {desc ? (
-            desc
-          ) : (
-            <span>
-              Quis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore <br /> noulla pariatur ccaecat curidatat aero
-            </span>
-          )}
+          {desc ? desc : ""}
         </h2>
 
         <div className="mt-6">
