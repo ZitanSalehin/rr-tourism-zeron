@@ -70,7 +70,7 @@ const Header = () => {
           <li>
             <Link
               to="/contact"
-              className="bg-[#F26D52] py-3 px-5 rounded-lg flex items-center gap-2 text-white"
+              className="bg-[#F26D52] hover:bg-black transition-all duration-700 py-3 px-5 rounded-lg flex items-center gap-2 text-white"
             >
               Contact Us
               <ArrowRight size={16} className="text-white" />
@@ -170,6 +170,13 @@ const Header = () => {
 
             <Link to="/blog" className="hover:text-[#F26D52] transition">
               Blog
+            </Link>
+            <Link
+              to="/contact"
+              className="w-fit text-sm bg-[#F26D52] py-2 px-3 rounded-lg flex items-center gap-2 text-white"
+            >
+              Contact Us
+              <ArrowRight size={16} className="text-white" />
             </Link>
           </span>
         </div>

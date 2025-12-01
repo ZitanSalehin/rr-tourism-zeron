@@ -3,6 +3,10 @@ import activitiesThrilled from "../assets/activitiesThrilled.jpg";
 import banner from "../assets/banner.jpeg";
 import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
 import commonHeroBG from "../assets/commonHeroBG.jpg";
+import contactFormImage from "../assets/contactFormImage.jpg";
+import contactIcon1 from "../assets/contactIcon1.png";
+import contactIcon2 from "../assets/contactIcon2.png";
+import contactIcon3 from "../assets/contactIcon3.png";
 import discover from "../assets/discoverDestination.jpg";
 import happyPeople from "../assets/happyPeople.jpg";
 import hill from "../assets/hill.png";
@@ -52,6 +56,10 @@ export {
   banner,
   bgInHomeAboutUs,
   commonHeroBG,
+  contactFormImage,
+  contactIcon1,
+  contactIcon2,
+  contactIcon3,
   discover,
   happyPeople,
   hill,

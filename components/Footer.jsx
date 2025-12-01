@@ -28,7 +28,7 @@ const Footer = () => {
               className="w-full bg-white py-3 px-4 pr-12 rounded-lg text-black 
                focus:outline-none focus:border-[#F26D52] focus:ring-2 focus:ring-[#F26D52]"
             />
-            <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#F26D52] p-2.5 rounded-md hover:bg-blue-700 transition">
+            <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#F26D52] p-2.5 rounded-md hover:bg-black transition-all duration-700 cursor-pointer">
               <Send size={18} className="text-white" />
             </button>
           </div>
