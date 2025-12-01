@@ -11,7 +11,9 @@ const Header = () => {
     <nav className="bg-white text-md font-normal fixed top-0 left-0 w-full z-99999 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4 lg:px-40 py-4">
         {/* Logo (always visible) */}
-        <img src={logo} alt="Zeron Group Logo" className="w-36 lg:w-40" />
+        <Link to="/">
+          <img src={logo} alt="Zeron Group Logo" className="w-36 lg:w-40" />
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-10">
