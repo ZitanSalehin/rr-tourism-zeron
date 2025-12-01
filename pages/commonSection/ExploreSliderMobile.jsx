@@ -127,7 +127,7 @@ const ExploreSliderMobile = () => {
         </button>
         <button
           onClick={() => swiperRef.current && swiperRef.current.slideNext()}
-          className="w-10 h-10 rounded-full border flex items-center justify-center transition"
+          className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
           aria-label="Next"
         >
           <ArrowRight />

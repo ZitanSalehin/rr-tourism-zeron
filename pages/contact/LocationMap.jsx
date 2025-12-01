@@ -1,6 +1,6 @@
 export default function LocationMap() {
   return (
-    <div className="container mx-auto px-10 py-32 flex justify-center items-center">
+    <div className="container mx-auto px-10 py-20 lg:py-32 flex justify-center items-center">
       <div className="w-[1000px] h-[500px] rounded-xl overflow-hidden shadow-lg group">
         <iframe
           title="location-map"

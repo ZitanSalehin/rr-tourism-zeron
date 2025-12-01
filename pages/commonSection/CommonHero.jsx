@@ -5,7 +5,7 @@ import { commonHeroBG } from "../../src/assets/index";
 const CommonHero = ({ title, desc, btnText }) => {
   return (
     <section
-      className="relative shadow-md overflow-hidden min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex items-center"
+      className="relative shadow-md overflow-hidden min-h-[350px] md:min-h-[450px] lg:min-h-[500px] flex items-center"
       style={{
         backgroundImage: `url(${commonHeroBG})`,
         backgroundSize: "cover",
