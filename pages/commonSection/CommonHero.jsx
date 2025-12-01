@@ -27,11 +27,14 @@ const CommonHero = ({ title, desc, btnText }) => {
 
         <div className="mt-6">
           <Link
-            to="/contact"
+            to="/"
             className="py-3 px-5 rounded-lg flex items-center gap-2 text-white border border-white w-fit mx-auto"
           >
             Home
-            <ArrowRight size={16} className="text-white" />
+            <ArrowRight
+              size={16}
+              className={`${btnText ? btnText : "hidden"} text-white`}
+            />
             <span className="text-[#F26D52]">{btnText ? btnText : ""}</span>
           </Link>
         </div>
