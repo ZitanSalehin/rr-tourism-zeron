@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Dropdown = ({ title, items }) => {
+const DropdownDesktop = ({ title, items }) => {
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -35,7 +35,7 @@ const Dropdown = ({ title, items }) => {
 
       {/* Dropdown Box */}
       <div
-        className={`absolute left-0 top-6 w-44 bg-white shadow-xl rounded-xl
+        className={`absolute -left-10 top-10 w-44 bg-white shadow-xl rounded-xl
           transition-all duration-500 ease-[cubic-bezier(0.22, 1, 0.36, 1)]
           ${
             open
@@ -53,7 +53,9 @@ const Dropdown = ({ title, items }) => {
             key={i}
             to={item.path || "#"}
             className={`block px-4 py-2 transition-all hover:bg-[#F26D52] hover:text-white 
-              cursor-pointer ${i === items.length - 1 ? "rounded-b-xl" : ""}`}
+              cursor-pointer ${i === items.length - 1 ? "rounded-b-xl" : ""} ${
+              i === 0 ? "rounded-t-xl" : ""
+            }`}
           >
             {item.label}
           </Link>
@@ -63,4 +65,4 @@ const Dropdown = ({ title, items }) => {
   );
 };
 
-export default Dropdown;
+export default DropdownDesktop;

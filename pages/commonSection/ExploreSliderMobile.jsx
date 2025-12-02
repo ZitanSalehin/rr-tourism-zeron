@@ -77,10 +77,10 @@ const ExploreSliderMobile = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="w-full"
         breakpoints={{
-          0: { slidesPerView: 1, spaceBetween: 14 }, // Mobile
-          640: { slidesPerView: 1, spaceBetween: 16 }, // Large phones
-          768: { slidesPerView: 2, spaceBetween: 18 }, // Tablets
-          1024: { slidesPerView: 3, spaceBetween: 20 }, // Desktop
+          0: { slidesPerView: 1, spaceBetween: 14 },
+          640: { slidesPerView: 1, spaceBetween: 16 },
+          768: { slidesPerView: 2, spaceBetween: 18 },
+          1024: { slidesPerView: 3, spaceBetween: 20 },
         }}
       >
         {places.map((p, i) => (
