@@ -1,5 +1,5 @@
 // components/ExploreSlider.jsx
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -55,6 +55,9 @@ const places = [
 
 const ExploreSliderMobile = () => {
   const swiperRef = useRef(null);
+  const [isPrevClick, setIsPrevClick] = useState(false);
+  const [isNextClick, setIsNextClick] = useState(false);
+
   return (
     <div className="flex flex-col py-5 lg:py-20 px-5">
       {/* Title and Navigation Buttons */}
@@ -118,16 +121,36 @@ const ExploreSliderMobile = () => {
       </Swiper>
       {/* Navigation Buttons */}
       <div className="flex gap-4 justify-center mt-5">
+        {/* Prev */}
         <button
-          onClick={() => swiperRef.current && swiperRef.current.slidePrev()}
-          className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+          onClick={() => {
+            setIsPrevClick(true);
+            swiperRef.current?.slidePrev();
+
+            setTimeout(() => {
+              setIsPrevClick(false);
+            }, 500);
+          }}
+          className={`w-10 h-10 rounded-full border flex items-center justify-center transition
+      ${isPrevClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
+    `}
           aria-label="Prev"
         >
           <ArrowLeft />
         </button>
+
+        {/* Next */}
         <button
-          onClick={() => swiperRef.current && swiperRef.current.slideNext()}
-          className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+          onClick={() => {
+            setIsNextClick(true);
+            swiperRef.current?.slideNext();
+            setTimeout(() => {
+              setIsNextClick(false);
+            }, 500);
+          }}
+          className={`w-10 h-10 rounded-full border flex items-center justify-center transition
+      ${isNextClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
+    `}
           aria-label="Next"
         >
           <ArrowRight />

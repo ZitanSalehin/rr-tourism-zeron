@@ -9,9 +9,30 @@ import {
   Send,
   Twitter,
 } from "feather-icons-react";
+import { Link } from "react-router-dom";
 import ScrollToTopButton from "./ScrollToTopButton";
 
 const Footer = () => {
+  const aboutLinks = [
+    { label: "About Us: Why trust us.", to: "/about-us" },
+    { label: "Our Story: The beginning of our journey.", to: "/our-team" },
+    { label: "Blog: Travel inspiration & tips.", to: "/blog" },
+    { label: "Contact: Contact form.", to: "/contact" },
+  ];
+  const navigationLinks = [
+    { label: "Home", to: "/" },
+    { label: "About Us", to: "/about-us" },
+    { label: "Destinations", to: "/destination" },
+    { label: "Services", to: "/services" },
+    { label: "Reviews", to: "/reviews" },
+  ];
+  const exploreLinks = [
+    { label: "Services: View all services.", to: "/services" },
+    { label: "What We Offer: Our specialties.", to: "/services" },
+    { label: "Latest Posts: Recent blog updates.", to: "/blog" },
+    { label: "Help Center: Answers to your questions.", to: "/faq" },
+  ];
+
   return (
     <footer className="bg-[#251c1c] text-white">
       {/* Newsletter Section - Full Width */}
@@ -41,17 +62,15 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-3">About Us</h3>
           <ul className="space-y-2 text-sm opacity-90">
-            {[
-              "About Us: Why trust us.",
-              "Our Story: The beginning of our journey.",
-              "Blog: Travel inspiration & tips.",
-              "Contact: Contact form.",
-            ].map((item) => (
-              <li
-                key={item}
-                className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
-              >
-                <ArrowRight size={15} className="text-[#F26D52]" /> {item}
+            {aboutLinks.map((item) => (
+              <li key={item.label}>
+                <Link
+                  to={item.to}
+                  className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
+                >
+                  <ArrowRight size={15} className="text-[#F26D52]" />
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -81,16 +100,17 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-3">Navigation</h3>
           <ul className="space-y-2 text-sm opacity-90">
-            {["Home", "About Us", "Destinations", "Pages", "Reviews"].map(
-              (item) => (
-                <li
-                  key={item}
+            {navigationLinks.map((item) => (
+              <li key={item.label}>
+                <Link
+                  to={item.to}
                   className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
                 >
-                  <ArrowRight size={15} className="text-[#F26D52]" /> {item}
-                </li>
-              )
-            )}
+                  <ArrowRight size={15} className="text-[#F26D52]" />
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -98,17 +118,15 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-3">Explore</h3>
           <ul className="space-y-2 text-sm opacity-90">
-            {[
-              "Services: View all services.",
-              "What We Offer: Our specialties.",
-              "Latest Posts: Recent blog updates.",
-              "Help Center: Answers to your questions.",
-            ].map((item) => (
-              <li
-                key={item}
-                className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
-              >
-                <ArrowRight size={15} className="text-[#F26D52]" /> {item}
+            {exploreLinks.map((item) => (
+              <li key={item.label}>
+                <Link
+                  to={item.to}
+                  className="flex items-center gap-2 hover:opacity-80 cursor-pointer transition"
+                >
+                  <ArrowRight size={15} className="text-[#F26D52]" />
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>

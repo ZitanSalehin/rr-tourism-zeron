@@ -1,5 +1,5 @@
 // components/ExploreSlider.jsx
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -55,6 +55,8 @@ const places = [
 
 export default function ExploreSliderDesktop() {
   const swiperRef = useRef(null);
+  const [isPrevClick, setIsPrevClick] = useState(false);
+  const [isNextClick, setIsNextClick] = useState(false);
 
   return (
     <div className="relative py-16">
@@ -68,16 +70,37 @@ export default function ExploreSliderDesktop() {
         </div>
 
         <div className="flex gap-3 absolute right-66 top-14">
+          {/* Prev Button */}
           <button
-            onClick={() => swiperRef.current && swiperRef.current.slidePrev()}
-            className="w-14 h-14 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+            onClick={() => {
+              setIsPrevClick(true);
+              swiperRef.current?.slidePrev();
+
+              setTimeout(() => {
+                setIsPrevClick(false);
+              }, 500);
+            }}
+            className={`w-14 h-14 rounded-full border flex items-center justify-center transition
+    ${isPrevClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
+    hover:bg-[#F26D52] hover:text-white
+  `}
             aria-label="Prev"
           >
             <ArrowLeft />
           </button>
+
+          {/* Next Button */}
           <button
-            onClick={() => swiperRef.current && swiperRef.current.slideNext()}
-            className="w-14 h-14 rounded-full border flex items-center justify-center hover:text-white hover:bg-[#F26D52] transition"
+            onClick={() => {
+              setIsNextClick(true);
+              swiperRef.current?.slideNext();
+              setTimeout(() => {
+                setIsNextClick(false);
+              }, 500);
+            }}
+            className={`w-14 h-14 hover:bg-[#F26D52] hover:text-white rounded-full border flex items-center justify-center transition
+      ${isNextClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
+    `}
             aria-label="Next"
           >
             <ArrowRight />
