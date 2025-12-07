@@ -16,13 +16,19 @@ import homeSlider3 from "../assets/homeSlider3.jpg";
 import homeSlider4 from "../assets/homeSlider4.jpg";
 import homeSlider5 from "../assets/homeSlider5.jpg";
 import joinUs from "../assets/joinUs.jpg";
+import joinUs2 from "../assets/joinUs2.webp";
+import joinUs3 from "../assets/joinUs3.jpg";
 import logoWithoutText from "../assets/logoWithoutText.png";
 import popularDestionation1 from "../assets/popularDestionation1.jpg";
+import popularDestionation10 from "../assets/popularDestionation10.webp";
 import popularDestionation2 from "../assets/popularDestionation2.jpg";
 import popularDestionation3 from "../assets/popularDestionation3.jpg";
 import popularDestionation4 from "../assets/popularDestionation4.jpg";
 import popularDestionation5 from "../assets/popularDestionation5.jpg";
 import popularDestionation6 from "../assets/popularDestionation6.jpg";
+import popularDestionation7 from "../assets/popularDestionation7.webp";
+import popularDestionation8 from "../assets/popularDestionation8.webp";
+import popularDestionation9 from "../assets/popularDestionation9.webp";
 import ppl1 from "../assets/ppl1.jpg";
 import ppl10 from "../assets/ppl10.jpg";
 import ppl11 from "../assets/ppl11.jpg";
@@ -69,13 +75,19 @@ export {
   homeSlider4,
   homeSlider5,
   joinUs,
+  joinUs2,
+  joinUs3,
   logoWithoutText,
   popularDestionation1,
+  popularDestionation10,
   popularDestionation2,
   popularDestionation3,
   popularDestionation4,
   popularDestionation5,
   popularDestionation6,
+  popularDestionation7,
+  popularDestionation8,
+  popularDestionation9,
   ppl1,
   ppl10,
   ppl11,
