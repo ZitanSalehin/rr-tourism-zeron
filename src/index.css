@@ -31,3 +31,11 @@ html {
 .animate-pulse-custom {
   animation: pulseGlow 2s infinite;
 }
+
+.excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
