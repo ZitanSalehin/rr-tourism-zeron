@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "@/components/Layout";
 import AboutUs from "@/pages/aboutUs/AboutUs";
 import Blog from "@/pages/blog/Blog";
+import BookingPage from "@/pages/bookingPage/BookingPage";
 import Contact from "@/pages/contact/Contact";
 import Destination from "@/pages/destination/Destination";
 import FAQ from "@/pages/faq/FAQ";
@@ -13,7 +14,6 @@ import OurTeam from "@/pages/ourTeam/OurTeam";
 import Reviews from "@/pages/reviews/Reviews";
 import Services from "@/pages/services/Services";
 import ConditionPolicy from "@/pages/termsCondition/ConditionPolicy";
-import BookingPage from "./pages/BookingPage/BookingPage";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
