@@ -4,7 +4,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ArrowLeft, ArrowRight, Calendar, User } from "feather-icons-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import {
   popularDestionation10,
@@ -46,6 +46,8 @@ const data = [
 
 export default function DestinationSlider() {
   const swiperRef = useRef(null);
+  const [isPrevClick, setIsPrevClick] = useState(false);
+  const [isNextClick, setIsNextClick] = useState(false);
 
   return (
     <section className="py-10 lg:py-16 container mx-auto max-w-7xl px-5 lg:px-20">
@@ -121,16 +123,38 @@ export default function DestinationSlider() {
 
       {/* ARROWS */}
       <div className="flex gap-4 justify-center mt-6">
+        {/* Prev Button */}
         <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="w-12 lg:w-14 h-12 lg:h-14 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+          onClick={() => {
+            setIsPrevClick(true);
+            swiperRef.current?.slidePrev();
+
+            setTimeout(() => {
+              setIsPrevClick(false);
+            }, 300);
+          }}
+          className={`w-10 h-10 lg:w-14 lg:h-14 rounded-full border flex items-center justify-center transition
+    ${isPrevClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
+    hover:bg-[#F26D52] hover:text-white
+  `}
+          aria-label="Prev"
         >
           <ArrowLeft />
         </button>
 
+        {/* Next Button */}
         <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="w-12 lg:w-14 h-12 lg:h-14 rounded-full border flex items-center justify-center hover:bg-[#F26D52] hover:text-white transition"
+          onClick={() => {
+            setIsNextClick(true);
+            swiperRef.current?.slideNext();
+            setTimeout(() => {
+              setIsNextClick(false);
+            }, 300);
+          }}
+          className={`w-10 h-10 lg:w-14 lg:h-14 hover:bg-[#F26D52] hover:text-white rounded-full border flex items-center justify-center transition
+      ${isNextClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
+    `}
+          aria-label="Next"
         >
           <ArrowRight />
         </button>

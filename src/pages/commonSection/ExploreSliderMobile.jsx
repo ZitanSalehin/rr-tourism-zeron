@@ -129,7 +129,7 @@ const ExploreSliderMobile = () => {
 
             setTimeout(() => {
               setIsPrevClick(false);
-            }, 500);
+            }, 300);
           }}
           className={`w-10 h-10 rounded-full border flex items-center justify-center transition
       ${isPrevClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
@@ -146,7 +146,7 @@ const ExploreSliderMobile = () => {
             swiperRef.current?.slideNext();
             setTimeout(() => {
               setIsNextClick(false);
-            }, 500);
+            }, 300);
           }}
           className={`w-10 h-10 rounded-full border flex items-center justify-center transition
       ${isNextClick ? "bg-[#F26D52] text-white" : "bg-white text-black"}
