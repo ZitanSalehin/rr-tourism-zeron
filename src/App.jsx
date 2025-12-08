@@ -13,6 +13,7 @@ import OurTeam from "@/pages/ourTeam/OurTeam";
 import Reviews from "@/pages/reviews/Reviews";
 import Services from "@/pages/services/Services";
 import ConditionPolicy from "@/pages/termsCondition/ConditionPolicy";
+import BookingPage from "./pages/BookingPage/BookingPage";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="booking" element={<BookingPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

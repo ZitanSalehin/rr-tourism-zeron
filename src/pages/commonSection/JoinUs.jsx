@@ -31,7 +31,7 @@ const JoinUs = () => {
 
         <div className="mt-6">
           <Link
-            to="/contact"
+            to="/booking"
             className="bg-[#F26D52] hover:bg-black transition-all duration-700 py-3 px-5 rounded-lg flex items-center gap-2 text-white"
           >
             Book Now

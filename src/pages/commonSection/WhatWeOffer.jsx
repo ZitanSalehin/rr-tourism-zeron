@@ -7,6 +7,7 @@ import {
   PhoneCall,
   Users,
 } from "feather-icons-react";
+import { Link } from "react-router-dom";
 
 export default function WhatWeOffer() {
   const services = [
@@ -74,9 +75,12 @@ export default function WhatWeOffer() {
 
               <p className="text-gray-600 mb-4">{item.desc}</p>
 
-              <button className="flex items-center text-orange-600 font-medium hover:underline">
+              <Link
+                to="/services"
+                className="flex items-center text-orange-600 font-medium no-underline hover:no-underline"
+              >
                 Learn More <ArrowRight className="w-4 h-4 ml-2" />
-              </button>
+              </Link>
             </div>
           ))}
         </div>

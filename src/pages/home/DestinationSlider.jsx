@@ -12,6 +12,7 @@ import {
   popularDestionation8,
   popularDestionation9,
 } from "@/assets/index";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -75,47 +76,49 @@ export default function DestinationSlider() {
           <SwiperSlide key={i} className="px-2">
             <div className="mx-auto bg-gray-50 rounded-3xl p-4 border border-white hover:border-[#E55E46] transition-all duration-300 cursor-pointer">
               {/* IMAGE BOX */}
-              <div className="relative group overflow-hidden rounded-2xl">
-                <img
-                  src={item.img}
-                  alt=""
-                  className="w-full h-56 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
-                />
+              <Link to="/booking">
+                <div className="relative group overflow-hidden rounded-2xl">
+                  <img
+                    src={item.img}
+                    alt=""
+                    className="w-full h-56 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                  />
 
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-
-              {/* DETAILS */}
-              <div className="mt-4 px-4">
-                <div className="flex items-center gap-4 text-gray-600 text-sm">
-                  <span className="flex items-center gap-2">
-                    <Calendar size={14} className="text-[#F16C52]" />
-                    {item.days}
-                  </span>
-
-                  <span className="h-4 w-px bg-gray-300"></span>
-
-                  <span className="flex items-center gap-2">
-                    <User size={14} className="text-[#F16C52]" />
-                    {item.persons}
-                  </span>
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
 
-                <h3 className="mt-2 text-xl font-semibold text-gray-900 playfair">
-                  {item.title}
-                </h3>
+                {/* DETAILS */}
+                <div className="mt-4 px-4">
+                  <div className="flex items-center gap-4 text-gray-600 text-sm">
+                    <span className="flex items-center gap-2">
+                      <Calendar size={14} className="text-[#F16C52]" />
+                      {item.days}
+                    </span>
 
-                <div className="mt-4 flex items-center justify-between border-t border-gray-300 pt-3">
-                  <span className="text-2xl font-bold text-[#F16C52]">
-                    {item.price}
-                  </span>
+                    <span className="h-4 w-px bg-gray-300"></span>
 
-                  <button className="flex items-center gap-1 text-gray-900 hover:text-[#F16C52] transition text-sm">
-                    Book Now <ArrowRight size={16} />
-                  </button>
+                    <span className="flex items-center gap-2">
+                      <User size={14} className="text-[#F16C52]" />
+                      {item.persons}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-2 text-xl font-semibold text-gray-900 playfair">
+                    {item.title}
+                  </h3>
+
+                  <div className="mt-4 flex items-center justify-between border-t border-gray-300 pt-3">
+                    <span className="text-2xl font-bold text-[#F16C52]">
+                      {item.price}
+                    </span>
+
+                    <button className="flex items-center gap-1 text-gray-900 hover:text-[#F16C52] transition text-sm">
+                      Book Now <ArrowRight size={16} />
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </SwiperSlide>
         ))}
