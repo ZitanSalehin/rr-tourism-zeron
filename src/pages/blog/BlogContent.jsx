@@ -48,7 +48,6 @@ export default function BlogContent() {
             key={post.id}
             className="bg-white h-fit rounded-xl shadow-md overflow-hidden"
           >
-            {/* Image Wrapper */}
             <div className="relative overflow-hidden">
               <img
                 src={post.img}
