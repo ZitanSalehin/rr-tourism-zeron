@@ -1,4 +1,4 @@
-import banner from "@/assets/banner.jpeg";
+import { banner } from "@/assets/index";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import emailjs from "@emailjs/browser";
 import { Clock, Feather, MapPin, Phone, Users } from "feather-icons-react";
@@ -60,10 +60,10 @@ const BookingPage = () => {
     // public_key
     emailjs
       .send(
-        "service_dbs42vh",
-        "template_falf2nc",
+        "service_thuislh",
+        "template_6po11zo",
         formData,
-        "tzbyl9sRxSz_XgjdG"
+        "Mf2SAv25l55Dt_Dl9"
       )
       .then(
         () => {
@@ -94,7 +94,7 @@ const BookingPage = () => {
       } bg-cover bg-center flex items-center justify-center relative`}
       style={{ backgroundImage: `url(${banner})` }}
     >
-      <div className="absolute inset-0 bg-amber-900/30"></div>
+      <div className="absolute inset-0 bg-amber-900/50"></div>
 
       <div className="relative z-999">
         {/* --------------- TEXT AREA ---------------- */}

@@ -1,20 +1,26 @@
 import {
-  popularDestionation1,
-  popularDestionation2,
-  popularDestionation3,
-  popularDestionation4,
-  popularDestionation5,
-  popularDestionation6,
+  homeSlider1,
+  homeSlider2,
+  homeSlider3,
+  homeSlider4,
+  homeSlider5,
+  popularDestionation10,
+  popularDestionation7,
+  popularDestionation8,
+  popularDestionation9,
 } from "@/assets/index";
 
 const GridGallery = () => {
   const images = [
-    popularDestionation1,
-    popularDestionation2,
-    popularDestionation3,
-    popularDestionation4,
-    popularDestionation5,
-    popularDestionation6,
+    homeSlider1,
+    homeSlider2,
+    homeSlider3,
+    homeSlider4,
+    homeSlider5,
+    popularDestionation10,
+    popularDestionation7,
+    popularDestionation8,
+    popularDestionation9,
   ];
 
   return (

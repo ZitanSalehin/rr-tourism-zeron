@@ -9,7 +9,7 @@ const Services = () => {
     <div>
       <CommonHero
         title="Services"
-        desc="Nuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero."
+        desc="We provide carefully planned travel services designed to offer comfort, safety, and value for every guest on every trip."
         btnText="Services"
       />
       <WhatWeOffer />

@@ -1,6 +1,6 @@
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ArrowLeft, ArrowRight, Calendar, User } from "feather-icons-react";
@@ -15,6 +15,34 @@ import {
 import { Link } from "react-router-dom";
 
 const data = [
+  {
+    img: popularDestionation7,
+    days: "5 Days",
+    persons: "2 Person",
+    title: "Kyoto, Japan",
+    price: "$499",
+  },
+  {
+    img: popularDestionation8,
+    days: "7 Days",
+    persons: "3 Person",
+    title: "The Dolomites, Italy",
+    price: "$690",
+  },
+  {
+    img: popularDestionation9,
+    days: "4 Days",
+    persons: "3 Person",
+    title: "Santorini, Greece",
+    price: "$550",
+  },
+  {
+    img: popularDestionation10,
+    days: "6 Days",
+    persons: "2 Person",
+    title: "Banff National Park, Canada",
+    price: "$720",
+  },
   {
     img: popularDestionation7,
     days: "5 Days",
@@ -62,7 +90,8 @@ export default function DestinationSlider() {
 
       {/* Swiper */}
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
         spaceBetween={30}
         slidesPerView={1}

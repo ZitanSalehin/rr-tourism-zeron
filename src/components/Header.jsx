@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import { rrlogo } from "@/assets/index";
 import { ArrowRight } from "feather-icons-react";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -26,8 +26,15 @@ const Header = () => {
       className="bg-white text-md font-normal fixed top-0 left-0 w-full z-99999 shadow-md"
     >
       <div className="container mx-auto flex justify-between items-center px-4 lg:px-40 py-4">
-        <Link to="/">
-          <img src={logo} alt="Zeron Group Logo" className="w-36 lg:w-40" />
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            src={rrlogo}
+            alt="Zeron Group Logo"
+            className="w-12 lg:w-14 rounded-2xl"
+          />
+          <span className="text-2xl font-semibold playfair text-[#3DADEF]">
+            RR TOURISM
+          </span>
         </Link>
 
         {/* Desktop Menu */}

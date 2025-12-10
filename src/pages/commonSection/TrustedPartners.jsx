@@ -1,12 +1,15 @@
-import { tp1, tp2, tp3, tp4, tp5, tp6, tp7, tp8 } from "@/assets/index";
+import { tp1, tp2, tp3, tp4 } from "@/assets/index";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 const TrustedPartners = () => {
-  const isDesktop = useMediaQuery("(min-width: 500px)");
-  const partners = [tp1, tp2, tp3, tp4, tp5, tp6, tp7, tp8];
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  // Determine columns based on screen size
-  const cols = isDesktop ? 4 : 2;
+  const partners = [
+    { img: tp1, name: "ZERON ACADEMY" },
+    { img: tp2, name: "THE MIGRATION" },
+    { img: tp3, name: "ZERON STUDY ABROAD" },
+    { img: tp4, name: "ZERON TOURISM" },
+  ];
 
   return (
     <section className="bg-white py-16">
@@ -20,37 +23,40 @@ const TrustedPartners = () => {
         </div>
 
         {/* Grid */}
-        <div
-          className={`grid grid-cols-2 ${isDesktop ? "sm:grid-cols-4" : ""}`}
-        >
-          {partners.map((url, index) => {
-            const isFirstRow = index < cols;
-            const isFirstCol = index % cols === 0;
+        <div className="grid grid-cols-2 md:grid-cols-4">
+          {partners.map((p, index) => {
+            let borderClass = "";
 
-            // Calculate total rows
-            const totalRows = Math.ceil(partners.length / cols);
-            const currentRow = Math.floor(index / cols) + 1;
-            const isLastRow = currentRow === totalRows;
+            if (isDesktop) {
+              // DESKTOP MODE (4 columns)
+              const isLastCol = index === 3;
+              const isFirstRow = index < 4;
+
+              borderClass += !isLastCol ? " border-r border-gray-200" : "";
+              borderClass += !isFirstRow ? " border-t border-gray-200" : "";
+            } else {
+              // MOBILE MODE (2×2 grid)
+              const isTopRow = index < 2; // 0,1
+              const isLeftCol = index % 2 === 0; // 0,2
+
+              borderClass += isTopRow ? " border-b border-gray-200" : "";
+              borderClass += isLeftCol ? " border-r border-gray-200" : "";
+            }
 
             return (
               <div
                 key={index}
-                className={`flex items-center justify-center p-8 transition
-                  ${
-                    isDesktop
-                      ? `${isFirstRow ? "" : "border-t border-gray-200"} ${
-                          isFirstCol ? "" : "border-l border-gray-200"
-                        }`
-                      : `${isLastRow ? "" : "border-b border-gray-200"} ${
-                          isFirstCol ? "" : "border-l border-gray-200"
-                        }`
-                  }`}
+                className={`flex flex-col items-center justify-center p-8 transition ${borderClass}`}
               >
                 <img
-                  src={url}
-                  alt={`Partner ${index + 1}`}
+                  src={p.img}
+                  alt={p.name}
                   className="max-h-16 md:max-h-24 object-contain hover:scale-110 transition duration-700 cursor-pointer"
                 />
+
+                <p className="mt-4 text-sm md:text-base font-semibold text-gray-700 text-center">
+                  {p.name}
+                </p>
               </div>
             );
           })}

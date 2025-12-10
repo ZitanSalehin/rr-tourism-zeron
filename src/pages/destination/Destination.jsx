@@ -9,7 +9,7 @@ const Destination = () => {
     <div className="">
       <CommonHero
         title="Destinations"
-        desc="Nuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero."
+        desc="Our featured destinations offer unique beauty, culture, and adventure, giving travelers unforgettable moments to treasure."
         btnText="Destinations"
       />
       <DestinationTabs />

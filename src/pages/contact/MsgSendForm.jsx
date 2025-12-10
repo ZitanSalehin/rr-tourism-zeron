@@ -58,10 +58,10 @@ const MsgSendForm = () => {
 
     emailjs
       .send(
-        "service_dbs42vh",
-        "template_37yqsxl",
+        "service_thuislh",
+        "template_leaxq17",
         formData,
-        "tzbyl9sRxSz_XgjdG"
+        "Mf2SAv25l55Dt_Dl9"
       )
       .then(() => {
         alert("Message sent successfully!");

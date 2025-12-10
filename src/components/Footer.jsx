@@ -1,4 +1,4 @@
-import logo from "@/assets/logoForDark.png";
+import { rrlogo } from "@/assets/index";
 import {
   ArrowRight,
   AtSign,
@@ -38,7 +38,11 @@ const Footer = () => {
       {/* Newsletter Section - Full Width */}
       <div className="w-full bg-[#1a1313] py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-6">
-          <img src={logo} alt="Zeron Group Logo" className="h-auto" />
+          <img
+            src={rrlogo}
+            alt="Zeron Group Logo"
+            className="h-12 rounded-xl"
+          />
           <div className="playfair text-lg font-semibold text-center md:text-left">
             Sign up for the newsletter:
           </div>

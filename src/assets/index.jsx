@@ -1,28 +1,25 @@
-import sixtySix from "../assets/66.png";
 import activitiesThrilled from "../assets/activitiesThrilled.jpg";
-import banner from "../assets/banner.jpeg";
-import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
+import banner from "../assets/banner.jpg";
+// import bgInHomeAboutUs from "../assets/bgInHomeAboutUs.jpg";
+import bgInHomeAboutUs2 from "../assets/bgInHomeAboutUs2.jpg";
+import blog1 from "../assets/blog1.jpg";
+import blog2 from "../assets/blog2.jpg";
+import blog3 from "../assets/blog3.jpg";
 import commonHeroBG from "../assets/commonHeroBG.jpg";
 import contactFormImage from "../assets/contactFormImage.jpg";
-import contactIcon1 from "../assets/contactIcon1.png";
-import contactIcon2 from "../assets/contactIcon2.png";
-import contactIcon3 from "../assets/contactIcon3.png";
 import discover from "../assets/discoverDestination.jpg";
-import happyPeople from "../assets/happyPeople.jpg";
+import happyPeople from "../assets/happyPeople.png";
 import hill from "../assets/hill.png";
 import homeSlider1 from "../assets/homeSlider1.jpg";
 import homeSlider2 from "../assets/homeSlider2.jpg";
 import homeSlider3 from "../assets/homeSlider3.jpg";
 import homeSlider4 from "../assets/homeSlider4.jpg";
 import homeSlider5 from "../assets/homeSlider5.jpg";
+import homeSlider6 from "../assets/homeSlider6.jpg";
 import joinUs from "../assets/joinUs.jpg";
-import joinUs2 from "../assets/joinUs2.webp";
+import joinUs2 from "../assets/joinUs2.jpg";
 import joinUs3 from "../assets/joinUs3.jpg";
-import logoWithoutText from "../assets/logoWithoutText.png";
-import popularDestionation1 from "../assets/popularDestionation1.jpg";
 import popularDestionation10 from "../assets/popularDestionation10.webp";
-import popularDestionation2 from "../assets/popularDestionation2.jpg";
-import popularDestionation3 from "../assets/popularDestionation3.jpg";
 import popularDestionation4 from "../assets/popularDestionation4.jpg";
 import popularDestionation5 from "../assets/popularDestionation5.jpg";
 import popularDestionation6 from "../assets/popularDestionation6.jpg";
@@ -40,32 +37,25 @@ import ppl5 from "../assets/ppl5.jpg";
 import ppl7 from "../assets/ppl7.jpg";
 import ppl8 from "../assets/ppl8.jpg";
 import ppl9 from "../assets/ppl9.jpg";
-import s1 from "../assets/s1.png";
-import s2 from "../assets/s2.png";
-import s3 from "../assets/s3.png";
-import s4 from "../assets/s4.png";
-import s5 from "../assets/s5.png";
-import s6 from "../assets/s6.png";
-import sixtySixOrange from "../assets/sixtySixOrange.png";
+import rrlogo from "../assets/RRlogo.webp";
+import rrLogo2 from "../assets/rrLogo2.png";
 import testimonialBG from "../assets/testimonialBG.jpg";
-import tp1 from "../assets/tp1.png";
-import tp2 from "../assets/tp2.png";
-import tp3 from "../assets/tp3.png";
-import tp4 from "../assets/tp4.png";
-import tp5 from "../assets/tp5.png";
-import tp6 from "../assets/tp6.png";
-import tp7 from "../assets/tp7.png";
-import tp8 from "../assets/tp8.png";
+import tp1 from "../assets/tp1.webp";
+import tp2 from "../assets/tp2.webp";
+import tp3 from "../assets/tp3.webp";
+import tp4 from "../assets/tp4.webp";
+import zeron from "../assets/zeron.webp";
 
 export {
   activitiesThrilled,
   banner,
-  bgInHomeAboutUs,
+  // bgInHomeAboutUs,
+  bgInHomeAboutUs2,
+  blog1,
+  blog2,
+  blog3,
   commonHeroBG,
   contactFormImage,
-  contactIcon1,
-  contactIcon2,
-  contactIcon3,
   discover,
   happyPeople,
   hill,
@@ -74,14 +64,11 @@ export {
   homeSlider3,
   homeSlider4,
   homeSlider5,
+  homeSlider6,
   joinUs,
   joinUs2,
   joinUs3,
-  logoWithoutText,
-  popularDestionation1,
   popularDestionation10,
-  popularDestionation2,
-  popularDestionation3,
   popularDestionation4,
   popularDestionation5,
   popularDestionation6,
@@ -99,21 +86,12 @@ export {
   ppl7,
   ppl8,
   ppl9,
-  s1,
-  s2,
-  s3,
-  s4,
-  s5,
-  s6,
-  sixtySix,
-  sixtySixOrange,
+  rrlogo,
+  rrLogo2,
   testimonialBG,
   tp1,
   tp2,
   tp3,
   tp4,
-  tp5,
-  tp6,
-  tp7,
-  tp8,
+  zeron,
 };

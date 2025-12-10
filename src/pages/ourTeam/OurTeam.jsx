@@ -8,7 +8,7 @@ const OurTeam = () => {
     <div>
       <CommonHero
         title="Our Team"
-        desc="Nuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero."
+        desc="Our dedicated team works with passion and precision, ensuring every detail is managed to give you confidence and peace of mind."
         btnText="Our Team"
       />
       <TravelExperts />

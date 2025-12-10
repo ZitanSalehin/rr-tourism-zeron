@@ -1,3 +1,4 @@
+import { blog1, blog2, blog3 } from "@/assets/index";
 import { Calendar, User } from "feather-icons-react";
 import { useState } from "react";
 
@@ -5,7 +6,7 @@ const posts = [
   {
     id: 1,
     title: "The Ultimate Packing List For Every Type Of Traveler",
-    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    img: blog1,
     author: "administrator",
     date: "August 6, 2024",
     excerpt:
@@ -14,7 +15,7 @@ const posts = [
   {
     id: 2,
     title: "A Comprehensive Guide To Eco-Friendly Travel",
-    img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    img: blog2,
     author: "administrator",
     date: "August 6, 2024",
     excerpt:
@@ -23,7 +24,7 @@ const posts = [
   {
     id: 3,
     title: "Top Destinations You Must Visit In 2025",
-    img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    img: blog3,
     author: "administrator",
     date: "August 7, 2024",
     excerpt:

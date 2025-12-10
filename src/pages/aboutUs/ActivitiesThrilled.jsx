@@ -22,6 +22,7 @@ const ActivitiesThrilled = () => {
               alt="hill"
               className="absolute bottom-0 left-0 w-36 md:w-130 z-1 opacity-30"
             />
+            kj
           </div>
 
           {/* Orange shadow behind hill */}
@@ -63,14 +64,18 @@ const ActivitiesThrilled = () => {
         </div>
 
         {/* RIGHT HALF (50% COVER IMAGE) */}
-        <div
-          className="w-full md:w-1/2 h-[350px] md:h-auto"
-          style={{
-            backgroundImage: `url(${activitiesThrilled})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
+        <div className="relative w-full md:w-1/2 h-[350px] md:h-auto">
+          <div className="absolute inset-0 bg-linear-to-b from-orange-300/70 to-orange-100/20  pointer-events-none"></div>
+
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: `url(${activitiesThrilled})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
       </div>
     </section>
   );

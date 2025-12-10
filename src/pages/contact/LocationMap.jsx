@@ -10,7 +10,7 @@ export default function LocationMap() {
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
           className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.918275072061!2d144.96639587620515!3d-37.81515313463607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642dffca5e77b%3A0x1b4a675add28ec92!2s180%20Flinders%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000"
+          src="https://www.google.com/maps/embed/v1/place?q=F%20Haque%20Tower%20107%2C%20Level-4%2C%20Bir%20Uttam%20C.R%20Datta%20Raod%2C%20Dhaka-1205.%2C%20Dhaka%2C%20Bangladesh&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
         ></iframe>
       </div>
     </div>

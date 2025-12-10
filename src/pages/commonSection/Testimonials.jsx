@@ -11,8 +11,8 @@ import {
   ppl3,
   ppl4,
   ppl5,
-  sixtySix,
   testimonialBG,
+  zeron,
 } from "../../assets/index";
 
 const testimonials = [
@@ -21,21 +21,21 @@ const testimonials = [
     text: "The trip was completely hassle-free, and the experience was truly unforgettable. The guides were professional, and their knowledge of the local culture was outstanding. I would definitely book with RR TOURISM again!",
     name: "Rahat Khan",
     title: "Happy Explorer",
-    image: sixtySix,
+    image: zeron,
   },
   {
     id: 2,
     text: "From start to finish, everything was perfectly organized. The team made sure we were comfortable throughout the journey, and every destination felt magical. RR TOURISM exceeded my expectations — highly recommended!",
     name: "Aminul Chowdhury",
     title: "Happy Explorer",
-    image: sixtySix,
+    image: zeron,
   },
   {
     id: 3,
     text: "An absolutely wonderful experience! The arrangements were smooth, the service was exceptional, and every moment felt special. Thanks to RR TOURISM, we created memories that will last a lifetime!",
     name: "Milon Ali",
     title: "Happy Explorer",
-    image: sixtySix,
+    image: zeron,
   },
 ];
 
@@ -52,7 +52,7 @@ const Testimonials = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#FCFAF5]/80"></div>
+      <div className="absolute inset-0 bg-[#FCFAF5]/85"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-28 lg:py-32 flex flex-col md:flex-row items-center gap-16 md:gap-24 lg:gap-40">
         {/* ============== Left Circle Images ============== */}
@@ -70,13 +70,13 @@ const Testimonials = () => {
             className="absolute -bottom-5 left-2 w-20 sm:w-24 lg:w-28 rounded-full"
           />
           <img
-            src={ppl4}
+            src={ppl5}
             className="absolute bottom-5 right-0 w-20 sm:w-24 lg:w-28 rounded-full"
           />
           <img
-            src={ppl5}
+            src={ppl4}
             className="absolute top-1/2 left-1/2 w-28 sm:w-32 lg:w-40 -translate-x-1/2 -translate-y-1/2 
-            bg-white p-6 sm:p-8 lg:p-10 rounded-full"
+            bg-white p-4 sm:p-6 lg:p-8 rounded-full"
           />
         </div>
 
@@ -114,7 +114,7 @@ const Testimonials = () => {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-full p-2 bg-[#F26D52] object-contain"
+                      className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
                     />
                     <div>
                       <h2 className="text-lg sm:text-xl font-semibold">

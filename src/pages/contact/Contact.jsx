@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
       <CommonHero
         title="Contact"
-        desc="Quis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero."
+        desc="Our team is always ready to assist with any inquiries, ensuring you receive quick support and clear guidance whenever needed."
         btnText="Contact"
       />
       <ContactCards />

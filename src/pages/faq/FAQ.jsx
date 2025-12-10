@@ -9,7 +9,7 @@ const FAQ = () => {
     <div className="bg-gray-50">
       <CommonHero
         title="FAQ"
-        desc="Quis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero."
+        desc="Our FAQ covers common questions to help you understand booking, destinations, policies, and what to expect during travel."
         btnText="FAQ"
       />
       <FAQAccordion />

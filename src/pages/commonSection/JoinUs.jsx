@@ -5,7 +5,7 @@ import { joinUs2 } from "../../assets/index";
 const JoinUs = () => {
   return (
     <section
-      className="relative shadow-md overflow-hidden min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-center"
+      className="relative shadow-md overflow-hidden min-h-[400px] md:min-h-[500px] lg:min-h-[550px] flex items-center"
       style={{
         backgroundImage: `url(${joinUs2})`,
         backgroundSize: "cover",
@@ -13,11 +13,11 @@ const JoinUs = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#FCFAF5]/70"></div>
+      <div className="absolute inset-0 bg-gray-50/85"></div>
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
-        <h3 className="text-[#F26D52] text-base md:text-lg font-semibold tracking-wide">
+        <h3 className="text-[#F26D52] text-lg md:text-xl font-semibold tracking-wide">
           Come & Join Us
         </h3>
 

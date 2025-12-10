@@ -1,4 +1,4 @@
-import { bgInHomeAboutUs, happyPeople, logoWithoutText } from "@/assets/index";
+import { bgInHomeAboutUs2, happyPeople, rrlogo } from "@/assets/index";
 
 const stats = [
   { label: "Happy Explorers", value: "10K+" },
@@ -11,12 +11,12 @@ const AboutUsHome = () => {
     <section
       className="relative bg-gray-100 shadow-md overflow-hidden"
       style={{
-        backgroundImage: `url(${bgInHomeAboutUs})`,
+        backgroundImage: `url(${bgInHomeAboutUs2})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-[#FCFAF5]/70"></div>
+      <div className="absolute inset-0 bg-gray-50/90"></div>
       <div className="relative max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
         {/* Left Side Image */}
         <div className="relative w-full md:w-1/2">
@@ -26,9 +26,9 @@ const AboutUsHome = () => {
             className="rounded-full shadow-lg w-full object-cover"
           />
           <img
-            src={logoWithoutText}
+            src={rrlogo}
             alt="Logo"
-            className="absolute lg:bottom-2 -bottom-2 right-14 w-16 h-16 md:w-28 md:h-32"
+            className="absolute rounded-full lg:bottom-2 -bottom-2 right-14 w-16 h-16 md:w-28 md:h-28"
           />
         </div>
 

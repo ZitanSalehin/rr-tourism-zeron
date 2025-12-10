@@ -1,4 +1,4 @@
-import { discover, logoWithoutText } from "@/assets/index";
+import { discover, rrlogo } from "@/assets/index";
 import { ArrowRight } from "feather-icons-react";
 import { Link } from "react-router-dom";
 
@@ -20,9 +20,9 @@ const DiscoverDestination = () => {
             className="rounded-full shadow-lg w-full object-cover"
           />
           <img
-            src={logoWithoutText}
+            src={rrlogo}
             alt="Logo"
-            className="absolute lg:bottom-2 -bottom-2 right-14 w-16 h-16 md:w-28 md:h-32"
+            className="absolute rounded-full lg:bottom-3 -bottom-2 right-14 lg:right-18 w-16 h-16 md:w-24 md:h-24"
           />
         </div>
 

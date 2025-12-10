@@ -10,7 +10,7 @@ const JoinUsTwo = () => {
         className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
       />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-gray-700/80"></div>
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 text-center flex flex-col items-center">

@@ -17,37 +17,37 @@ import { ArrowLeft, ArrowRight, MapPin } from "feather-icons-react";
 const places = [
   {
     img: homeSlider1,
-    title: "Spain",
+    title: "Japan",
     rating: "3.9",
     places: 32,
   },
   {
     img: homeSlider2,
-    title: "Venice",
+    title: "Turkey",
     rating: "4.5",
     places: 15,
   },
   {
     img: homeSlider3,
-    title: "London",
+    title: "Egypt",
     rating: "4.8",
     places: 18,
   },
   {
     img: homeSlider4,
-    title: "Chicago",
+    title: "Germany",
     rating: "4.7",
     places: 24,
   },
   {
     img: homeSlider5,
-    title: "Mumbai",
+    title: "USA",
     rating: "3.8",
     places: 17,
   },
   {
     img: homeSlider3,
-    title: "Tokyo",
+    title: "Canada",
     rating: "4.5",
     places: 16,
   },

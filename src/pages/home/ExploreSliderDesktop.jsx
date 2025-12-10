@@ -11,6 +11,7 @@ import {
   homeSlider3,
   homeSlider4,
   homeSlider5,
+  homeSlider6,
 } from "@/assets/index";
 import { ArrowLeft, ArrowRight, MapPin } from "feather-icons-react";
 
@@ -23,7 +24,7 @@ const places = [
   },
   {
     img: homeSlider2,
-    title: "Venice",
+    title: "Middle East",
     rating: "4.5",
     places: 15,
   },
@@ -35,19 +36,19 @@ const places = [
   },
   {
     img: homeSlider4,
-    title: "Chicago",
+    title: "Europe",
     rating: "4.7",
     places: 24,
   },
   {
     img: homeSlider5,
-    title: "Mumbai",
+    title: "Asia",
     rating: "3.8",
     places: 17,
   },
   {
-    img: homeSlider3,
-    title: "Tokyo",
+    img: homeSlider6,
+    title: "USA",
     rating: "4.5",
     places: 16,
   },
