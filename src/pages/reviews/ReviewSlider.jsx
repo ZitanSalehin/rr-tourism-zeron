@@ -1,4 +1,4 @@
-import { ppl1, ppl2, ppl3, ppl4, ppl5, zeron } from "@/assets/index";
+import { ppl1, ppl2, ppl3, ppl4, ppl5, rrlogo } from "@/assets/index";
 import { ArrowLeft, ArrowRight } from "feather-icons-react";
 import { useRef } from "react";
 import "swiper/css";
@@ -103,7 +103,7 @@ const ReviewSlider = () => {
             <div className="bg-gray-50 rounded-2xl border-b-2 border-[#F16C52] transition duration-500 px-6 py-8 h-full">
               {/* Top Icon */}
               <div className="w-12 h-12 flex items-center justify-center text-[#F26D52] mb-4">
-                <img src={zeron} alt="" srcset="" />
+                <img src={rrlogo} alt="" srcset="" className="rounded-xl" />
               </div>
 
               <p className="text-gray-600 mb-5">{item.text}</p>

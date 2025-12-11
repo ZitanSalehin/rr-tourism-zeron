@@ -11,8 +11,8 @@ import {
   ppl3,
   ppl4,
   ppl5,
+  rrlogo,
   testimonialBG,
-  zeron,
 } from "../../assets/index";
 
 const testimonials = [
@@ -21,21 +21,21 @@ const testimonials = [
     text: "The trip was completely hassle-free, and the experience was truly unforgettable. The guides were professional, and their knowledge of the local culture was outstanding. I would definitely book with RR TOURISM again!",
     name: "Rahat Khan",
     title: "Happy Explorer",
-    image: zeron,
+    image: rrlogo,
   },
   {
     id: 2,
     text: "From start to finish, everything was perfectly organized. The team made sure we were comfortable throughout the journey, and every destination felt magical. RR TOURISM exceeded my expectations — highly recommended!",
     name: "Aminul Chowdhury",
     title: "Happy Explorer",
-    image: zeron,
+    image: rrlogo,
   },
   {
     id: 3,
     text: "An absolutely wonderful experience! The arrangements were smooth, the service was exceptional, and every moment felt special. Thanks to RR TOURISM, we created memories that will last a lifetime!",
     name: "Milon Ali",
     title: "Happy Explorer",
-    image: zeron,
+    image: rrlogo,
   },
 ];
 
@@ -114,7 +114,7 @@ const Testimonials = () => {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                      className="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-2xl"
                     />
                     <div>
                       <h2 className="text-lg sm:text-xl font-semibold">

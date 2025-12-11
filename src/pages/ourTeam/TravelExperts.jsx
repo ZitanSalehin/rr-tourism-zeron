@@ -1,42 +1,30 @@
-import { ppl10, ppl11, ppl12, ppl7, ppl8, ppl9 } from "@/assets/index";
+// import { ppl10, ppl7, ppl8, ppl9 } from "@/assets/index";
 import { Facebook, Instagram, Youtube } from "feather-icons-react";
 
 const team = [
   {
     id: 1,
-    name: "Marvin Joner",
-    profession: "Tour Guide",
-    img: ppl7,
+    name: "Ridoy Saha",
+    profession: "Team Member",
+    img: "https://i.pravatar.cc/150?img=68",
   },
   {
     id: 2,
-    name: "Patricia Woodrum",
-    profession: "Tour Guide",
-    img: ppl8,
+    name: "Iqbal Hussain Shuvo",
+    profession: "Team Member",
+    img: "https://i.pravatar.cc/150?img=56",
   },
   {
     id: 3,
-    name: "Hannaz Stone",
-    profession: "Tour Guide",
-    img: ppl9,
+    name: "Nirob Hassan",
+    profession: "Team Member",
+    img: "https://i.pravatar.cc/150?img=57",
   },
   {
     id: 4,
-    name: "Kate Smith",
-    profession: "Tour Guide",
-    img: ppl10,
-  },
-  {
-    id: 5,
-    name: "Matt Higgins",
-    profession: "Tour Guide",
-    img: ppl11,
-  },
-  {
-    id: 5,
-    name: "Anita Brick",
-    profession: "Tour Guide",
-    img: ppl12,
+    name: "Md Aminul Islam",
+    profession: "Team Member",
+    img: "https://i.pravatar.cc/150?img=12",
   },
 ];
 
@@ -47,10 +35,10 @@ const TravelExperts = () => {
         Experienced Team
       </h3>
       <h2 className="text-4xl md:text-5xl font-bold playfair text-center pb-10">
-        Our Travel Experts
+        Our Team Members
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {team.map((member) => (
           <div key={member.id} className="flex flex-col items-center">
             <img
